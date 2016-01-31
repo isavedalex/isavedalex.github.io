@@ -13,7 +13,7 @@ body {
 }
 
 header {
-	padding: 20px 0px;
+	padding: 1em 0em;
 	background-color: rgba(34,34,34,.4);
 	color: #ffffff;
 	position:absolute;
@@ -34,11 +34,17 @@ header a:hover {
 }
 header div {
 	float:right;
+	margin-right: 1em;
+	font-size: 1.5em;
+	margin-top: -.5em;
 }
 header img {  /* remind john to talk about icon fonts */
-	height: 40px;
-	margin-top: -10px;
+	height: 2em;
+	margin-top: -1em;
 }
+
+
+
 section {
 	padding:10em 0;
 }
@@ -47,7 +53,7 @@ section#splash {
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:#fff;
-	height:75vh;
+	height: 100vh;
 	padding:0;
 }
 section:nth-of-type(odd) {
@@ -55,14 +61,14 @@ section:nth-of-type(odd) {
 	color: #222;
 }
 h1 {
-	padding-top: 180px;
-	font-size: 6.2em;
+	padding-top: 2.5em;
+	font-size: 6.5em;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
 section h2 {
-	margin-bottom: 40px;
+	margin-bottom: 2em;
 }
 
 ul {
@@ -75,28 +81,29 @@ hr {
 }
 #phone {
 	float: left;
-	padding-left: 20px;
+	padding-left: 1em;
 }
 
 #social {
 	float: right;
-	margin-right: 20px;
+	margin-right: 1em;
 }
 
 .mainnav {
-	margin: 0 20px;
+	margin: 0 1em;
 }
 
-#slogan {
+.slogan {
 	font-style: italic;
-	font-size: 1.2em;
 	font-weight: 200;
-	letter-spacing: .2em;
+	padding-bottom: 10em;
+
 }
+
 
 .button, #splash a {
 	display: inline-block;
-	width: 200px;
+	width: 15em;
 	background-color: #e64633;
 	color: #fff;
 	font-size: .9em;
@@ -111,6 +118,9 @@ hr {
 	margin-right: auto;
 }
 
+.socbuttons {
+	height: 4;
+}
 	
 
 
