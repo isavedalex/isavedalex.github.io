@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 * {
 	padding: 0px;
@@ -9,9 +10,12 @@
 body {
 	background: #222222;
 	color: #fff;
-	font-family: helvetica, sans-serif;
+	font-size: 16px; /*1em = 16px*/
+	font-family: 'Merriweather', Serif;
+	letter-spacing: .1em;
 	text-align: center;
 	line-height: 1.2;
+	text-rendering: optimizeLegibility;
 }
 
 header {
@@ -21,6 +25,7 @@ header {
 	position:absolute;
 	text-decoration: none;
 	text-align: center;
+	font-family: oswald, sans-serif;
 	top:0;
 	width:100%;
 
@@ -36,15 +41,23 @@ header a:hover {
 }
 header div {
 	float:right;
-	margin-right: 1em;
+	margin: -1em 1em 0em 0em;
 	font-size: 1.5em;
-	margin-top: -.5em;
-}
-header img {  /* remind john to talk about icon fonts */
-	height: 2em;
-	margin-top: -1em;
+
 }
 
+header img {  /* remind john to talk about icon fonts */
+	float: left;
+
+	height: 4em;
+	margin: -1em -1em 0em 1em;
+}
+
+nav {
+	margin: 0em 2em;
+	padding-bottom: .1em;
+	text-align: center;
+}
 
 
 section {
@@ -62,16 +75,31 @@ section:nth-of-type(odd) {
 	background-color: #fff;
 	color: #222;
 }
+
+h1,h2,h3,h4,h5,h6 {
+ font-family: Oswald, sans-serif;
+}
+
 h1 {
 	padding-top: 2.5em;
 	font-size: 6.5em;
 	font-weight: 400;
-	font-family: Oswald, sans-serif;
 	text-transform: uppercase;
 }
 
 section h2 {
+	font-size: 1.5em;
 	margin-bottom: 2em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	width: 30em;
+	text-align: center;
+	margin: 0em auto;
+	/*ASK JOHN why does taking out skew the text to the left. should it not inherit from .divcontent*/
+	
 }
 
 ul {
@@ -81,25 +109,27 @@ ul {
 hr {
 	width: 50%;
 	text-align: center;
+	color: #fff;
 }
 #phone {
-	float: left;
-	padding-left: 1em;
-}
-
-#social {
 	float: right;
+	padding-left: 1em;
+	font-size: .5em;
 	margin-right: 1em;
+
 }
 
 .mainnav {
 	margin: 0 1em;
+
 }
 
 .slogan {
 	font-style: italic;
 	font-weight: 200;
-	padding-bottom: 10em;
+	width: 47em;
+	padding: 1.5em 0em 5em 0em;
+	margin: 0em auto;
 
 }
 
@@ -107,23 +137,24 @@ hr {
 .button, #splash a {
 	display: inline-block;
 	width: 15em;
-	background-color: #e64633;
+	background-color: #fa4542;
+	box-shadow: 0 3px 0 0 #be0201;
 	color: #fff;
 	font-size: .9em;
 	font-weight: 200;
-	padding:2em 0;
+	padding:1.5em 0;
 	text-decoration:none;
 }
 
-.divcontent {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+.button, #splash a:hover {
+    background-color: #F62048;
 }
 
-.socbuttons {
-	height: 4;
+.divcontent {
+	margin: 0em auto;
 }
+
+
 	
 
 
