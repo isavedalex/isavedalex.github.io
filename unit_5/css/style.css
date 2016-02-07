@@ -180,7 +180,7 @@ iframe, object, embed {
 	float: left;
 }
 
-.blacksection:after {
+.clearfix:after {
 	content: "."; 
    	visibility: hidden; 
    	display: block; 
@@ -188,13 +188,6 @@ iframe, object, embed {
    	clear: both;
 }
 
-.whitesection:after {
-	content: "."; 
-   	visibility: hidden; 
-   	display: block; 
-   	height: 0; 
-   	clear: both;
-}
 
 .clientimg {
 	width: 25%;
