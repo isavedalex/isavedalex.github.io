@@ -74,6 +74,7 @@ section#splash {
 section:nth-of-type(odd) {
 	background-color: #fff;
 	color: #222;
+	width: 100%
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -173,9 +174,14 @@ iframe, object, embed {
     background-color: #F62048;
 }
 
+.wrapper {
+	overflow: hidden;
+	width: 60em;
+	margin: auto;	
+	/*background-color: green; */    
+}
+
 .twocolumn {
-	display: inline;
-	margin: 0em auto;
 	width: 50%;
 	float: left;
 }
