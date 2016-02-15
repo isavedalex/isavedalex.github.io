@@ -54,7 +54,7 @@ header img {
 }
 
 nav {
-	margin: .5em 2em 0em 2em;
+	margin: .5em 2em 0em 7em;
 	text-align: center;
 	
 }
@@ -126,7 +126,7 @@ ul {
 
 
 iframe, object, embed {
-        max-width: 80%;
+        max-width: 100%;
 }
 
 #phone {
@@ -211,18 +211,30 @@ iframe, object, embed {
 	border-radius: 90px;
 }
 
+#clients div {
+	text-align: center;
+}
+
 #clients img {
 	width: 15em;
-	height: 10em;
 	display: block;
 }
 
-#googlemap {
-	background-color: gray;
-	max-width: 50%;
-	height: 350px;
+#clients li {
 	float: left;
-	margin-left: 5em;
+	padding: 1em;
+	margin: 0 auto;
+	list-style: none;
+}
+
+#googlemapdiv {
+	height: 500px;
+}
+
+#googlemap {
+	height: 100%;
+	width: 100%;
+
 }
 
 
