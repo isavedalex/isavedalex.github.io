@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
 
 * {
 	padding: 0px;
@@ -64,11 +65,11 @@ section {
 	padding:10em 0;
 }
 section#splash {
-	background-image: url("../images/guitarmic1.jpg");
+	background-image: url("../images/micsplash.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:#fff;
-	height: 110vh;
+	height: 120vh;
 	padding:0;
 }
 section:nth-of-type(odd) {
@@ -86,6 +87,7 @@ h1 {
 	font-size: 6.5em;
 	font-weight: 400;
 	text-transform: uppercase;
+
 }
 
 h3 {
@@ -147,7 +149,7 @@ iframe, object, embed {
 	font-style: italic;
 	font-weight: 200;
 	width: 47.5em;
-	padding: 1.5em 0em 5em 0em;
+	padding: 1.5em 0em 8em 0em;
 	margin: 0em auto;
 	text-align: center;
 
@@ -206,6 +208,21 @@ iframe, object, embed {
 	margin-top: 20px;
 }
 
+#equipment img {
+	width: 15em;
+}
+
+.gallery {
+	clear: both;
+}
+
+.gallery li {
+	float: left;
+	padding: 1em;
+	margin: 0 auto;
+	list-style: none;
+}
+
 #engineers img {
 	width: 180px;
 	border-radius: 90px;
@@ -228,14 +245,37 @@ iframe, object, embed {
 }
 
 #googlemapdiv {
-	height: 500px;
+	height: 30em;
+	width: 30em;
+	float: left;
 }
 
 #googlemap {
 	height: 100%;
 	width: 100%;
-
 }
+
+#contactdetails {
+	text-align: center;
+	padding-top: 6em;
+}
+
+.contacticon {
+	font-size: 5em;
+}
+
+
+footer {
+	clear: both;
+	text-align: center;
+	font-size: .8em;
+	font-weight: 100;
+}
+
+footer hr {
+	width: 50%;
+}
+
 
 
 
