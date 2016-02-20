@@ -4,6 +4,16 @@
 		<title>JBJ Studio</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+		<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox();
+            });
+    	</script>
 	</head>
 	<body>
 		<header>
@@ -68,21 +78,21 @@
 					</ul>
 				</div>
 				<div class="gallery">
-					<img src="images/equipment/nuemann1.jpg">
-					<img src="images/equipment/nuemann2.jpg">
-					<img src="images/equipment/microphones1.jpg">
-					<img src="images/equipment/microphones2.jpg">
-					<img src="images/equipment/neve.jpg">
-					<img src="images/equipment/desk1.jpg">
-					<img src="images/equipment/rack1.jpg">
-					<img src="images/equipment/rack2.jpg">
-					<img src="images/equipment/focusrite.jpg">
-					<img src="images/equipment/lavry.jpg">
-					<img src="images/equipment/amps1.jpg">
-					<img src="images/equipment/orange.jpg">
-					<img src="images/equipment/vox.jpg">
-					<img src="images/equipment/piano1.jpg">
-					<img src="images/equipment/piano2.jpg">
+					<a class="fancybox" href="images/equipment/nuemann1.jpg" data-fancybox-group="gallery" title="Nuemann Microphones"><img src="images/equipment/nuemann1.jpg" alt="Nuemann Microphone">
+					<a class="fancybox" href="images/equipment/nuemann2.jpg" data-fancybox-group="gallery" title="Nuemann Microphones"><img src="images/equipment/nuemann2.jpg" alt="Nuemann Microphone">
+					<a class="fancybox" href="images/equipment/microphones1.jpg" data-fancybox-group="gallery" title="A Range of Microphones"><img src="images/equipment/microphones1.jpg" alt="JBJ Microphones">
+					<a class="fancybox" href="images/equipment/microphones2.jpg" data-fancybox-group="gallery" title="A Range of Microphones"><img src="images/equipment/microphones2.jpg" alt="JBJ Microphones">
+					<a class="fancybox" href="images/equipment/neve.jpg" data-fancybox-group="gallery" title="Neve EQ's"><img src="images/equipment/neve.jpg" alt="Neve EQ's">
+					<a class="fancybox" href="images/equipment/desk1.jpg" data-fancybox-group="gallery" title="Amek Matchless Console"><img src="images/equipment/desk1.jpg" alt="Amek Matchless Console">
+					<a class="fancybox" href="images/equipment/rack1.jpg" data-fancybox-group="gallery" title="Focusrite Pre's & Dramer Compressor"><img src="images/equipment/rack1.jpg" alt="JBJ Rack">
+					<a class="fancybox" href="images/equipment/rack2.jpg" data-fancybox-group="gallery" title="Focusrite Red Pre"><img src="images/equipment/rack2.jpg" alt="JBJ Rack">
+					<a class="fancybox" href="images/equipment/focusrite.jpg" data-fancybox-group="gallery" title="Focusrite Red Pre"><img src="images/equipment/focusrite.jpg" alt="Focusrite Red Pre Amp">
+					<a class="fancybox" href="images/equipment/lavry.jpg" data-fancybox-group="gallery" title="Lavry AD10 Converter"><img src="images/equipment/lavry.jpg" alt="Lavry AD10 Converter">
+					<a class="fancybox" href="images/equipment/amps1.jpg" data-fancybox-group="gallery" title="Guitar Amplifiers"><img src="images/equipment/amps1.jpg" alt="JBJ Guitar Amps">
+					<a class="fancybox" href="images/equipment/orange.jpg" data-fancybox-group="gallery" title="Orange Amps"><img src="images/equipment/orange.jpg" alt="Orange Amps">
+					<a class="fancybox" href="images/equipment/vox.jpg" data-fancybox-group="gallery" title="Vox Amps"><img src="images/equipment/vox.jpg" alt="Vox Amps">
+					<a class="fancybox" href="images/equipment/piano1.jpg" data-fancybox-group="gallery" title="Upright Piano"><img src="images/equipment/piano1.jpg" alt="JBJ Piano">
+					<a class="fancybox" href="images/equipment/piano2.jpg" data-fancybox-group="gallery" title="Upright Piano"><img src="images/equipment/piano2.jpg" alt="JBJ Piano">
 				</div>
 			</div>	
 		</section>
@@ -108,13 +118,13 @@
 			<div class="wrapper">
 				<h2>Clients</h2>
 
-				<ul>
-					<li><img src="images/clients/lucyrose.jpg" alt="Lucy Rose" title="Lucy Rose"> Lucy Rose</li>
-					<li><img src="images/clients/razorlight.jpg" alt="Razorlight" title="Razorlight"> Razorlight</li>
-					<li><img src="images/clients/scoutingfor.jpg" alt="Scouting For Girls" title="Scouting For Girls"> Scouting For Girls</li>
-					<li><img src="images/clients/apple.jpg" alt="Apple" title="Apple"> Apple</li>
-					<li><img src="images/clients/vodafone.jpg" alt="Vodafone" title="Vodafone"> Vodafone</li>
-					<li><img src="images/clients/nhs.jpg" alt="NHS" title="NHS"> NHS</li>
+				<ul class="nofancybox">
+					<li><img class="nofancybox" src="images/clients/lucyrose.jpg" alt="Lucy Rose" title="Lucy Rose"> Lucy Rose</li>
+					<li><img class="nofancybox" src="images/clients/razorlight.jpg" alt="Razorlight" title="Razorlight"> Razorlight</li>
+					<li><img class="nofancybox" src="images/clients/scoutingfor.jpg" alt="Scouting For Girls" title="Scouting For Girls"> Scouting For Girls</li>
+					<li><img class="nofancybox" src="images/clients/apple.jpg" alt="Apple" title="Apple"> Apple</li>
+					<li><img class="nofancybox" src="images/clients/vodafone.jpg" alt="Vodafone" title="Vodafone"> Vodafone</li>
+					<li><img class="nofancybox" src="images/clients/nhs.jpg" alt="NHS" title="NHS"> NHS</li>
 			</div>
 		</section>
 		<section id="contact" class="clearfix">
