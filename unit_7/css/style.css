@@ -1,0 +1,388 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing:border-box;
+}
+
+video {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+body {
+	background: #222222;
+	color: #fff;
+	font-size: 16px; /*1em = 16px*/
+	font-family: 'Merriweather', Serif;
+	letter-spacing: .1em;
+	text-align: center;
+	line-height: 1.2;
+	text-rendering: optimizeLegibility;
+}
+
+header {
+	padding: 1em 0em;
+	background-color: rgba(34,34,34,.4);
+	color: #ffffff;
+	position:absolute;
+	text-decoration: none;
+	text-align: center;
+	font-family: oswald, sans-serif;
+	top:0;
+	width:100%;
+	padding: .5em 1em .5em 1em;
+
+}
+header a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+header a:hover {
+	text-decoration: none;
+	color: #dddddd;
+}
+header div {
+	float:right;
+	font-size: 1.6em;
+	margin-top: .3em;
+	
+
+}
+
+header img {  
+	float: left;
+	height: 4em;
+}
+
+nav {
+	margin: .5em 2em 0em 7em;
+	text-align: center;
+	
+}
+
+
+section {
+	padding:10em 0;
+}
+
+section:nth-of-type(even) {
+	background-color: #fff;
+	color: #222;
+	width: 100%
+}
+
+h1,h2,h3,h4,h5,h6 {
+ font-family: Oswald, sans-serif;
+}
+
+h1 {
+	padding-top: 1.5em;
+	font-size: 7.5em;
+	font-weight: 400;
+	text-transform: uppercase;
+
+}
+
+h3 {
+	margin: 1.5em 0em;
+}
+
+section h2 {
+	font-size: 1.5em;
+	margin-bottom: 2em;
+}
+
+
+
+a {
+	transition: .25s;color;
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #dddddd;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0em auto;
+	text-align: left;
+		
+}
+
+ul {
+	list-style-type: none;
+	line-height: 1.4em;
+}
+
+
+iframe, object, embed {
+        max-width: 100%;
+}
+
+#nav-toggle {
+	display: none;
+}
+
+#phone {
+	float: right;
+	padding-left: 1em;
+	font-size: .5em;
+	margin-right: 1em;
+
+}
+
+.mainnav {
+	margin: 0 1em;
+
+}
+
+
+.slogan {
+	font-style: italic;
+	font-weight: 200;
+	width: 47.5em;
+	margin: 1.5em auto 8em auto;
+	text-align: center;
+
+}
+
+.button, #splash a {
+	display: inline-block;
+	width: 15em;
+	background-color: #fa4542;
+	box-shadow: 1.5em #000;
+	color: #fff;
+	font-size: .9em;
+	font-weight: 200;
+	padding:1.5em 0;
+	margin-bottom: 3em;
+	text-decoration:none;
+}
+
+.button, #splash a:hover {
+    background-color: #F62048;
+}
+
+.wrapper {
+	overflow: hidden;
+	width: 60em;
+	margin: auto;	
+}
+
+.twocolumn {
+	max-width: 50%;
+	float: left;
+	padding: 1.5em;
+}
+
+.clearfix:after {
+	content: "."; 
+   	visibility: hidden; 
+   	display: block; 
+   	height: 0; 
+   	clear: both;
+}
+
+#services a {
+	font-variant: small-caps;
+}
+
+#services iframe {
+	margin-top: 20px;
+}
+
+.gallery {
+	clear: both;
+}
+
+.gallery img {
+	padding: .5em;
+	width: 33.3%;
+	float: left;
+}
+
+#engineers img {
+	width: 180px;
+	border-radius: 90px;
+}
+
+#clients div {
+	text-align: center;
+}
+
+#clients img {
+	width: 100%;
+	display: block;
+}
+
+#clients li {
+	float: left;
+	padding: 1em;
+	margin: 0 auto;
+	list-style: none;
+	width: 33.3%;
+}
+
+#googlemapdiv {
+	height: 30em;
+	width: 30em;
+	float: left;
+}
+
+#googlemap {
+	height: 100%;
+	width: 100%;
+}
+
+#contactdetails {
+	text-align: center;
+	padding-top: 6em;
+}
+
+.contacticon {
+	font-size: 4em;
+}
+
+
+footer p {
+	text-align: center;
+	font-size: .8em;
+	font-weight: 100;
+	padding: 1em;
+}
+
+footer hr {
+	width: 50%;
+	margin: 1em auto 0 auto;
+}
+
+
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width: 100%;
+}} 
+
+@media screen and (max-width: 768px) {
+	div#splash {
+		background-image: url("../images/micsplash.jpg");
+		background-size: cover;
+		background-repeat:no-repeat;
+		background-position: center;
+		color:#fff;
+		height: 100vh;
+		padding:0;
+}
+	h1, h2 {
+		padding-top: 2em;
+	}
+
+	iframe#jbjvideo {
+		margin-top: 8em;
+	}
+
+
+	nav, video, header div {
+		display: none;
+	}
+
+	.slogan {
+		width: 95%;
+
+	}
+	section {
+		padding: 0;
+	}
+
+	.gallery img {
+		padding: .5em;
+		width: 50%;
+		float: left;
+}
+
+
+	p {
+		margin: 0;
+	}
+
+	#googlemapdiv {
+		display: none;
+	}
+
+	#nav-toggle {
+		display: inline;
+		font-size: 3em;
+		float: right;
+}
+}
+
+	
+
+@media screen and (max-width: 600px) {
+	
+	section {
+		padding-bottom: 2em;
+	}
+
+	h1{
+		font-size: 3em;
+		margin: 0em 0 2em 0;
+		padding-top: 5em;
+	}
+
+	section h2 {
+		padding: 1em;
+		margin-bottom: 0em;
+	}
+
+	iframe#jbjvideo {
+		margin: 2em 0 2em 0;
+	}
+
+	.twocolumn {
+		max-width: 100%;
+		float: none;
+		padding: 0 1.5em;
+}
+	p {
+		text-align: center;
+
+	}
+
+
+	.gallery img {
+		padding: .5em;
+		width: 100%;
+		float: none;
+}
+
+	#splash a {
+		display: none;
+}
+
+	#engineers img {
+		margin-top: 2em;
+	}
+
+
+
+	#clients li {
+	padding: .5em;
+	width: 50%;
+}
+
+}
+
+
