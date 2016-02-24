@@ -18,7 +18,7 @@ video {
 }
 
 body {
-	background: #222222;
+	background-color: #222;
 	color: #fff;
 	font-size: 16px; /*1em = 16px*/
 	font-family: 'Merriweather', Serif;
@@ -64,13 +64,18 @@ header img {
 }
 
 nav {
-	margin: .5em 2em 0em 7em;
+	margin: 1.2em 2em 0em 7em;
 	text-align: center;
 	
 }
 
+#splash {
+	height: 100vh;
+	background: rgba(34, 34, 34, .6);
+}
 
 section {
+	background-color: #222; 
 	padding:10em 0;
 }
 
@@ -85,7 +90,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	padding-top: 1.5em;
+	padding-top: 2em;
 	font-size: 7.5em;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -132,6 +137,19 @@ iframe, object, embed {
         max-width: 100%;
 }
 
+footer p {
+	text-align: center;
+	font-size: .8em;
+	font-weight: 100;
+	padding: 1em;
+}
+
+footer hr {
+	width: 50%;
+	margin: 1em auto 0 auto;
+}
+
+
 #nav-toggle {
 	display: none;
 }
@@ -145,7 +163,7 @@ iframe, object, embed {
 }
 
 .mainnav {
-	margin: 0 1em;
+	padding: 1em 1em;
 
 }
 
@@ -178,12 +196,12 @@ iframe, object, embed {
 
 .wrapper {
 	overflow: hidden;
-	width: 60em;
+	max-width: 75em;
 	margin: auto;	
 }
 
 .twocolumn {
-	max-width: 50%;
+	width: 50%;
 	float: left;
 	padding: 1.5em;
 }
@@ -204,13 +222,19 @@ iframe, object, embed {
 	margin-top: 20px;
 }
 
+#equipment li {
+	text-align: left;
+	font-size: .8em;
+	padding-left: 10em;
+}
+
 .gallery {
 	clear: both;
 }
 
 .gallery img {
 	padding: .5em;
-	width: 33.3%;
+	width: 33.33%;
 	float: left;
 }
 
@@ -236,7 +260,7 @@ iframe, object, embed {
 	width: 33.3%;
 }
 
-#googlemapdiv {
+#canvas1 {
 	height: 30em;
 	width: 30em;
 	float: left;
@@ -245,6 +269,10 @@ iframe, object, embed {
 #googlemap {
 	height: 100%;
 	width: 100%;
+}
+
+ .scrolloff {
+        pointer-events: none;
 }
 
 #contactdetails {
@@ -257,23 +285,6 @@ iframe, object, embed {
 }
 
 
-footer p {
-	text-align: center;
-	font-size: .8em;
-	font-weight: 100;
-	padding: 1em;
-}
-
-footer hr {
-	width: 50%;
-	margin: 1em auto 0 auto;
-}
-
-
-@media screen and (max-width: 980px) {
-	.wrapper {
-		width: 100%;
-}} 
 
 @media screen and (max-width: 768px) {
 	div#splash {

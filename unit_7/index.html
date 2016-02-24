@@ -3,6 +3,7 @@
 	<head>
 		<title>JBJ Studio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -11,11 +12,22 @@
         <link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
 		<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
         <script>
-        $(document).ready(function() {
-            $('.fancybox').fancybox();
-            });
+        	$(document).ready(function() {
+            	$('.fancybox').fancybox();
+            	});
     	</script>
-	</head>
+    	<script>
+    	$(document).ready(function () {
+        $('#googlemap').addClass('scrolloff');
+        $('#canvas1').on('click', function () {
+            $('#googlemap').removeClass('scrolloff'); 
+        });
+        $("#googlemap").mouseleave(function () {
+            $('#googlemap').addClass('scrolloff'); 
+        });
+    	});
+		</script>
+    </head>
 	<body>
 		<header>
 			<img src="images/jbj_studio.png" alt="Black Square with White Letter JBJ Studio" title="JBJ Studio Logo">
@@ -79,7 +91,8 @@
 						<li>Boss Expression</li>
 					</ul>
 				</div>
-				<div class="gallery">
+			</div>
+			<div class="gallery">
 					<a class="fancybox" href="images/equipment/nuemann1.jpg" data-fancybox-group="gallery" title="Nuemann Microphones"><img src="images/equipment/nuemann1.jpg" alt="Nuemann Microphone"></a>
 					<a class="fancybox" href="images/equipment/nuemann2.jpg" data-fancybox-group="gallery" title="Nuemann Microphones"><img src="images/equipment/nuemann2.jpg" alt="Nuemann Microphone"></a>
 					<a class="fancybox" href="images/equipment/microphones1.jpg" data-fancybox-group="gallery" title="A Range of Microphones"><img src="images/equipment/microphones1.jpg" alt="JBJ Microphones"></a>
@@ -95,8 +108,7 @@
 					<a class="fancybox" href="images/equipment/vox.jpg" data-fancybox-group="gallery" title="Vox Amps"><img src="images/equipment/vox.jpg" alt="Vox Amps"></a>
 					<a class="fancybox" href="images/equipment/piano1.jpg" data-fancybox-group="gallery" title="Upright Piano"><img src="images/equipment/piano1.jpg" alt="JBJ Piano"></a>
 					<a class="fancybox" href="images/equipment/piano2.jpg" data-fancybox-group="gallery" title="Upright Piano"><img src="images/equipment/piano2.jpg" alt="JBJ Piano"></a>
-				</div>
-			</div>	
+				</div>	
 		</section>
 		<section id="engineers" class="clearfix">
 			<div class="wrapper">
@@ -132,8 +144,8 @@
 		<section id="contact" class="clearfix">
 			<div class="wrapper">
 				<h2>Contact</h2>
-				<div id="googlemapdiv">
-					<iframe id="googlemap" src="https://www.google.com/maps/embed/v1/place?q=JBJ+Studio,+Uxbridge,+United+Kingdom&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+				<div id="canvas1" class="map">
+					<iframe id="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317652.10106978146!2d-0.33718633651445745!3d51.537849969476646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766deaeb2ecb03%3A0x3ec57147d814334e!2sJBJ+Studio!5e0!3m2!1sen!2suk!4v1456331321942" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<div id="contactdetails">
 					<h3>Telephone - <a href="tel:01895 238112"> 01895 238112</a></h3>
@@ -147,7 +159,7 @@
 		</section>
 		<footer>
 			<hr>
-			<p>&copy; JBJ Studio 2016 -- Website Design by Alex Crowley</p>
+			<p>&copy; JBJ Studio 2016 -- Website Design by <a href="mailto:alex@alexcrowley.co.uk?subject=Hello">Alex Crowley</a></p>
 		</footer>
 	</body>
 </html>
