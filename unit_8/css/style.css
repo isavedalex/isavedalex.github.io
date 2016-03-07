@@ -228,6 +228,12 @@ footer hr {
 	padding-left: 10em;
 }
 
+#redbg {
+	background-color: #fa4542;
+	color: #fff;
+}
+
+
 .gallery {
 	clear: both;
 }
