@@ -215,6 +215,10 @@ footer hr {
    	clear: both;
 }
 
+#mobilephone {
+	display: none;
+}
+
 #services a {
 	font-variant: small-caps;
 }
@@ -233,7 +237,7 @@ footer hr {
 	background-color: #fa4542;
 	color: #fff;
 	width: 50%;
-	float: right;
+	margin: 0 auto;
 }
 
 #redbg li {
@@ -273,19 +277,22 @@ footer hr {
 	width: 33.3%;
 }
 
-#canvas1 {
+/*#canvas1 {
 	height: 30em;
-	width: 30em;
-	float: left;
-}
+
+}*/
 
 #googlemap {
-	height: 100%;
-	width: 100%;
+	height: 28em;
+	width: 30em;
 }
 
  .scrolloff {
         pointer-events: none;
+}
+
+#directions {
+	display: none;
 }
 
 #contactdetails {
@@ -313,6 +320,94 @@ a.back-to-top {
 a.back-to-top:hover {
     background-color: #F62048;
 
+}
+
+@media screen and (max-width: 1030px) {
+	#contact .twocolumn {
+		width: 100%;
+	}
+
+	#contactdetails {
+		padding: 0;
+	}
+
+}
+
+@media screen and (max-width: 860px) {
+	.gallery img {
+		width: 50%;
+	}
+
+	#clients li {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	nav {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	header div a {
+		display: none;
+	}
+
+	h1 {
+	padding-top: 3.5em;
+	font-size: 5.5em;
+	}
+
+	.mainnav {
+		display: block;
+		padding: 1em .5em;
+
+	}
+
+	.twocolumn {
+	width: 100%;
+	float: none;
+	padding: 1.5em;
+	}
+
+	#mobilephone {
+		display: inline;
+		float: right;
+		color: #fff;
+		font-size: 4em;
+		
+	}
+
+	#mobilephone:hover {
+		text-decoration: none;
+    	color: #dddddd;
+    	transition: .25s;color;
+	}
+
+	#googlemap {
+		display: none;
+	}
+
+	#directions {
+		display: inline-block;
+		padding: 0;
+	}
+
+	#directions i {
+		font-size: 7em;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+	.gallery img {
+		width: 100%;
+	}
+
+	#clients li {
+		width: 100%;
+	}
 }
 
 
