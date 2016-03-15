@@ -234,6 +234,25 @@ a.back-to-top:hover {
    	clear: both;
 }
 
+.scrolloff {
+        pointer-events: none;
+}
+
+.gallery {
+	clear: both;
+}
+
+.gallery img {
+	padding: .5em;
+	width: 33.33%;
+	float: left;
+}
+
+.contacticon {
+	font-size: 4em;
+}
+
+
 #splash {
 	height: 100vh;
 	background: rgba(34, 34, 34, .6);
@@ -264,30 +283,19 @@ a.back-to-top:hover {
 	padding-left: 10em;
 }
 
+#equipment .twocolumn {
+	padding: 4em 1.5em;
+}
+
 #redbg {
 	background-color: #fa4542;
 	color: #fff;
-	padding: 4em;
+	/*padding: 4em;*/
 	margin: 0 auto;
 }
 
 #redbg li {
 	padding: 0 1em;
-}
-
-
-.gallery {
-	clear: both;
-}
-
-.gallery img {
-	padding: .5em;
-	width: 33.33%;
-	float: left;
-}
-
-.contacticon {
-	font-size: 4em;
 }
 
 #engineers img {
@@ -318,9 +326,6 @@ a.back-to-top:hover {
 	width: 30em;
 }
 
-.scrolloff {
-        pointer-events: none;
-}
 
 #directions {
 	display: none;
@@ -375,6 +380,15 @@ a.back-to-top:hover {
 		display: none;
 	}
 
+}
+
+@media screen and (max-device-width: 800px) {
+    #splash {
+         background: url(../images/micsplash.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px) {
