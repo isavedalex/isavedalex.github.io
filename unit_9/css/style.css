@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url(https://fonts.googleapis.com/css?family=Rancho);
 
 * {
 	padding: 0px;
@@ -91,15 +92,16 @@ section:nth-of-type(even) {
 	width: 100%
 }
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
  font-family: Oswald, sans-serif;
 }
 
 h1 {
 	padding-top: 2em;
 	margin-bottom: .5em;
-	font-size: 7.5em;
+	font-size: 8em;
 	font-weight: 400;
+	font-family: Rancho, sans-serif;
 	text-transform: uppercase;
 
 }
@@ -398,7 +400,7 @@ a.back-to-top:hover {
 
 	h1 {
 		padding-top: 2.5em;
-		font-size: 6.5em;
+		font-size: 7em;
 		margin-bottom: 2em;
 	}
 
@@ -468,7 +470,7 @@ a.back-to-top:hover {
 
 @media screen and (max-width: 500px) {
 	h1 {
-		font-size: 6em;
+		font-size: 6.5em;
 		padding-top: 3em;
 		margin-bottom: 1.5em;
 	}
@@ -506,7 +508,7 @@ a.back-to-top:hover {
 
 @media screen and (max-width: 400px) {
 	h1 {
-		font-size: 5em;
+		font-size: 5.5em;
 		padding-top: 3em;
 		margin-bottom: 1.5em;
 	}
