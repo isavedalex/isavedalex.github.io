@@ -50,6 +50,15 @@
 				return false;
 			});	
 		</script>
+		<script src="jquery.watermarkinput.js" type="text/javascript"></script>
+		<script>
+			jQuery(function($){
+   					$("#Name").Watermark("Name");
+   					$("#Telephone").Watermark("Telephone Number");
+   					$("#E-Mail").Watermark("E-Mail");
+   					$("#message").Watermark("Your Message");
+				});
+		</script>
 
     </head>
 	<body>
@@ -179,9 +188,9 @@
 				<div class="twocolumn">
 					<h3 id="enquiry">Submit Enquiry</h3>
 					<form action="action_page.php">
-  						<input name="Name" type="text" value="YOUR NAME">
-      					<input name="Telephone" type ="text" value="TELEPHONE NUMBER">
-      					<input name="Email" type="text" value="EMAIL">
+  						<input id="Name" name="Name" type="text">
+      					<input id="Telephone" name="Telephone" type ="text">
+      					<input id="E-Mail" name="Email" type="text">
       					<textarea id="message" name="Message"></textarea>
       					<input id="submit" type="submit" value="Submit">
   					</form>
