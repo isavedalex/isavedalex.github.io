@@ -488,6 +488,9 @@ section#contact {
     #splash {
         background: linear-gradient(rgba(34, 34, 34, .6), rgba(34, 34, 34, .6)), url(../images/mobilebg.png) no-repeat fixed center ;
         background-size: cover;
+        webkit-background-size: cover;
+        moz-background-size: cover;
+        o-background-size: cover;
     	height: 100vh;
     }
     #bgvid {
@@ -593,9 +596,9 @@ section#contact {
 		font-size: .9em;
 	}
 
-	.contacticon {
-		height: 3em;
-		display: inline;
+	.contacticon {	
+		height: 2em;
+	
 	}
 
 	footer {
