@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
-@import url(https://fonts.googleapis.com/css?family=Rancho);
 
 * {
 	padding: 0px;
@@ -56,16 +55,10 @@ header a {
 	color: #ffffff;
 }
 
-header a:hover {
-	text-decoration: none;
-	color: #dddddd;
-}
 header div {
 	float:right;
 	font-size: 1.6em;
 	margin-top: .3em;
-	
-
 }
 
 header img {  
@@ -97,11 +90,11 @@ h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	padding-top: 2em;
+	padding-top: 1.8em;
 	margin-bottom: .5em;
 	font-size: 8em;
 	font-weight: 400;
-	font-family: Rancho, sans-serif;
+	font-family: Oswald, sans-serif;
 	text-transform: uppercase;
 
 }
@@ -128,7 +121,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #dddddd;
+	color: #fa4542;
 }
 
 p {
@@ -147,6 +140,30 @@ ul {
 
 iframe, object, embed {
     max-width: 100%;
+    border: none;
+}
+
+
+input {
+  display: block;
+  padding: .5em;
+  width: 50%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+textarea {
+	display: block;
+	padding: .5em;
+	width: 50%;
+	margin: 1em auto;
+	text-align: center;
+	height: 12em;
+}
+
+textarea:focus {
+  	outline-color: transparent;
+  	outline-style: none;
 }
 
 footer {
@@ -188,11 +205,29 @@ a.back-to-top:hover {
 
 }
 
+.socialsvg {
+	fill: #fff;
+	height: 1.2em;
+	width: auto;
+	-webkit-transition: .25s;color;
+	-moz-transition: .25s;color;
+	-o-transition: .25s;color;
+	transition: .25s;color;
+	padding: 0;
+	
+}
+
+.socialsvg:hover {
+	text-decoration: none;
+	fill: #fa4542;
+}
+
 
 .slogan {
 	font-style: italic;
 	font-weight: 200;
-	margin: 1.5em 15em 7em 15em;
+	width: 750px;
+	margin: auto;
 	text-align: center;
 
 }
@@ -206,7 +241,7 @@ a.back-to-top:hover {
 	font-size: .9em;
 	font-weight: 200;
 	padding:1.5em 0;
-	margin-bottom: 3em;
+	margin: 3em 0 3em 0;
 	text-decoration:none;
 }
 
@@ -248,8 +283,33 @@ a.back-to-top:hover {
 	float: left;
 }
 
+.map {
+	width: 100%;
+}
+
 .contacticon {
-	font-size: 4em;
+	height: 4em;
+	width: auto;
+	fill: #fff;
+	-webkit-transition: .25s;color;
+	-moz-transition: .25s;color;
+	-o-transition: .25s;color;
+	transition: .25s;color;
+}
+
+.contacticon:hover {
+	text-decoration: none;
+	fill: #fa4542;
+}
+
+.fancybox-opened .fancybox-skin {
+    -webkit-box-shadow: 0 0 0;
+       -moz-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+}
+
+#contact a:hover {
+	color: #fa4542;
 }
 
 
@@ -262,6 +322,7 @@ a.back-to-top:hover {
 	float: right;
 	padding-left: 1em;
 	font-size: .5em;
+	letter-spacing: .2em;
 	margin-right: 1em;
 }
 
@@ -329,10 +390,8 @@ div#redbg {
 
 
 #googlemap {
-	height: 28em;
-	width: 30em;
+	width: 100%;
 }
-
 
 #directions {
 	display: none;
@@ -340,62 +399,98 @@ div#redbg {
 
 #contactdetails {
 	text-align: center;
-	padding-top: 6em;
+	padding-bottom: 6em;
+}
+
+section#contact {
+	padding-bottom: 2em;
+}
+
+#contact input:focus {
+  	outline-color: transparent;
+  	outline-style: none;
 }
 
 
-@media screen and (max-width: 1234px) {
-	.slogan {
-		margin: 1.5em 15em 5.5em 15em;
-	}
-
+#address {
+	margin-bottom: 2em;
 }
+
+#submit {
+	display: inline-block;
+	width: 8em;
+	background-color: #fa4542;
+	box-shadow: 1.5em #000;
+	border: none;
+	color: #fff;
+	font-size: .9em;
+	font-weight: 200;
+	padding: .5em 0;
+	text-decoration:none;
+	font-family: 'Merriweather', Serif;
+	text-shadow: none;
+	-webkit-transition: .25s;color;
+	-moz-transition: .25s;color;
+	-o-transition: .25s;color;
+	transition: .25s;color;
+	cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #F62048;
+}
+
+
 
 @media screen and (max-width: 1030px) {
 	section {
 		padding: 5em 0;
 	}
 	
-	#contact .twocolumn {
+
+    #contact .twocolumn {
 		width: 100%;
 	}
 	#contactdetails {
 		padding: 0;
 	}
-}
 
-@media screen and (max-width: 1000px) {
-	.slogan {
-		margin: 1.5em 15em 4em 15em;
+	#address {
+		margin-bottom: 0;
 	}
+	.contacticon {
+		margin-bottom: 3em;
+	}	
 }
 
 @media screen and (max-width: 860px) {
 	h1 {
-		margin-bottom: 1.5em;
+		margin-bottom: .2em;
 	}
 
 	.gallery img {
 		width: 50%;
 	}
-
 	#clients li {
 		width: 50%;
 	}
-
 	.slogan {
-		display: none;
-	}
+    	width: 500px;
+    }
 
 }
 
 @media screen and (max-device-width: 800px) {
     #splash {
-         background: url(../images/micsplash.jpg) #000 no-repeat center center fixed;
+        background: linear-gradient(rgba(34, 34, 34, .6), rgba(34, 34, 34, .6)), url(../images/mobilebg.png) no-repeat fixed center ;
+        background-size: cover;
+    	height: 100vh;
     }
     #bgvid {
         display: none;
     }
+
+ 
 }
 
 @media screen and (max-width: 700px) {
@@ -404,11 +499,6 @@ div#redbg {
 		text-align: center;
 		
 	}
-
-	header {
-		display: 100vh;
-	}
-
 	header div {
 		margin-top: -20em;
 		display: none;
@@ -417,12 +507,6 @@ div#redbg {
 	header img {
 		display: none;
 		height: .1em;
-	}
-
-	h1 {
-		padding-top: 2.5em;
-		font-size: 7em;
-		margin-bottom: 2em;
 	}
 
 	.mainnav {
@@ -434,20 +518,11 @@ div#redbg {
 		float: none;
 		padding: 1.5em;
 	}
-/*
-	#mobilephone {
-		display: inline;
-		float: right;
-		color: #fff;
-		font-size: 4em;
-		
+
+	.contacticon {
+		margin-bottom: 0;
 	}
 
-	#mobilephone:hover {
-		text-decoration: none;
-    	color: #dddddd;
-    	transition: .25s;color;
-	}*/
 
 	#phone {
 		font-size: .1em;
@@ -467,20 +542,28 @@ div#redbg {
 
 	#directions {
 		display: inline-block;
-		padding: 0 0 0 .1em;
-		font-size: 4.5em;
 	}
 
 	
 }
 
+@media screen and (max-width: 650px) {
+	h1 {
+		font-size: 7.5em;
+	}
+}
+
 @media screen and (max-width: 580px) {
 	h1 {
-		padding-top: 2.5em;
+		font-size: 7em;
 	}
 
 	.gallery img {
 		width: 100%;
+	}
+
+	.slogan {
+		font-size: .8em;
 	}
 
 	section h2 {
@@ -489,12 +572,13 @@ div#redbg {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
 	h1 {
-		font-size: 6.5em;
-		padding-top: 3em;
-		margin-bottom: 1.5em;
+		font-size: 6em;
 	}
+}
+
+@media screen and (max-width: 504px) {
 
 	a.back-to-top {
 	
@@ -511,39 +595,34 @@ div#redbg {
 
 	}
 
+	.slogan {
+		width: 300px;
+	}
+
 	.button, #splash a {
 		font-size: .7em;
 	}
 
-
-
-
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 450px) {
 	h1 {
+		font-size: 5em;
 		padding-top: 2em;
-		margin-bottom: 1em;
 	}
 }
 
 @media screen and (max-width: 400px) {
-	h1 {
-		font-size: 5.5em;
-		padding-top: 3em;
-		margin-bottom: 1.5em;
-	}
 
 	.mainnav {
 		font-size: .7em;
 	}
 
-
 }
 
 @media screen and (max-width: 365px) {
 	h1 {
-		padding-top: 2em;
+		padding-top: 1.5em;
 	}
 
 	.button, #splash a {
