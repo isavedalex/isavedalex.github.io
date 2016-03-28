@@ -456,7 +456,7 @@ section#contact {
 	}
 
 	#contacttel {
-		padding: 1em;
+		padding: 2em;
 	}
 
 	#address {
@@ -595,10 +595,11 @@ section#contact {
 
 	.contacticon {
 		height: 3em;
+		display: inline;
 	}
 
 	footer {
-		font-size: .8em;
+		font-size: .6em;
 	}
 }
 
