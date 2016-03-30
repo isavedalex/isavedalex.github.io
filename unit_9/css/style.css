@@ -494,8 +494,7 @@ section#contact {
         moz-background-size: cover;
         o-background-size: cover;
     	height: 100vh;
-    	-webkit-transform: translateZ(0);
-    }
+}
     #bgvid {
         display: none;
     }
@@ -587,7 +586,7 @@ section#contact {
 		font-size: 6em;
 	}
 
-	input, textarea {
+	input, textarea, form, #submit {
 		width: 80%;
 		border-radius: 0;
 	}
