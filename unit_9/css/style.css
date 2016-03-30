@@ -236,13 +236,15 @@ a.back-to-top:hover {
 	display: inline-block;
 	width: 15em;
 	background-color: #fa4542;
-	box-shadow: 1.5em #000;
+	box-shadow: 0 3px 0 0 #be0201;
+	border-radius: 3px;
 	color: #fff;
 	font-size: .9em;
 	font-weight: 200;
 	padding:1.5em 0;
 	margin: 3em 0 3em 0;
 	text-decoration:none;
+
 }
 
 .button, #splash a:hover {
@@ -356,10 +358,8 @@ section#equipment {
 	background-color: #fa4542;
 	color: #fff;
 	margin: 0 auto;
-}
-
-div#redbg {
-	box-shadow: 2px rgba(0,0,0,.25) 2px rgba(0,0,0,.15);
+	box-shadow: 3px 3px 3px black;
+	padding: 2em;
 }
 
 #redbg li {
@@ -438,6 +438,8 @@ section#contact {
 	-o-transition: .25s;color;
 	transition: .25s;color;
 	cursor: pointer;
+	box-shadow: 0 3px 0 0 #be0201;
+	border-radius: 3px;
 }
 
 #submit:hover {
