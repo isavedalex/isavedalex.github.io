@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing:border-box;
+}
+
+body {
+	font-size: 16px;
+	/*1em = 16px*/
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+	float: left;
+}
+
+.mainnav {
+	color: #fff;
+	font-size: 1.5em;
+	font-style: none;
+	font-family: Ubuntu, sans-serif;
+	text-decoration: none;
+	padding: 0 1em;
+	margin: .5em 0 0 1em;
+}
+
+.mainnav:hover {
+	text-decoration: underline;
+	transition: .25s;
+}
+
+.socialsvg {
+	fill: #fff;
+	margin: 0 auto;
+	height: 2em;
+	width: 2em;
+	margin: .5em;
+/*	box-shadow: 1px 1px 1px 1px black;*/
+}
+
+.socialsvg:hover {
+	text-decoration: underline;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#stillbg { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/stillbg.jpg) no-repeat;
+    background-size: cover; 
+}
+
+#splash {
+	height: 93vh;
+	background: rgba(34, 34, 34, .1);
+}
