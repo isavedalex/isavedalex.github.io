@@ -18,7 +18,8 @@ nav {
 footer h2 {
 	color: #fff;
 	font-family: Inconsolata, sans-serif;
-	margin: auto;	
+	margin: auto;
+	display: inline;	
 }
 
 a {
@@ -75,6 +76,23 @@ nav a {
 
 }
 
+.plus {
+	fill: #fff;
+	height: .7em;
+	width: .7em;
+	margin-left: .5em;
+	transform: rotate(45deg);
+
+}
+
+.cross {
+	fill: #000;
+	height: .7em;
+	width: .7em;
+	margin-left: .5em;
+}
+
+
 /*.center {
 	margin: 0 auto;
 	text-align: center;
@@ -102,12 +120,6 @@ nav a {
 	background: rgba(34, 34, 34, .1);
 }
 
-#playlistplus {
-	fill: #fff;
-	height: .8em;
-	width: .8em;
-	transform: rotate(45deg);
-}
 
 #player {
 	display: none;
