@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
 * {
 	padding: 0px;
@@ -15,23 +15,48 @@ nav {
 	float: right;
 }
 
+footer h2 {
+	color: #fff;
+	font-family: Inconsolata, sans-serif;
+	margin: auto;	
+}
+
+a {
+	text-decoration: none;
+}
+
 nav a {
 	float: left;
 }
+
+
 
 .mainnav {
 	color: #fff;
 	font-size: 1.5em;
 	font-style: none;
-	font-family: Ubuntu, sans-serif;
+	font-family: Inconsolata, sans-serif;
 	text-decoration: none;
-	padding: 0 1em;
-	margin: .5em 0 0 1em;
+	margin: .5em 1em 0 2em;
+	white-space: nowrap;
 }
 
-.mainnav:hover {
-	text-decoration: underline;
-	transition: .25s;
+.underslide {
+	display: inline-block;
+}
+
+.underslide:after{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.underslide:hover:after {
+	width: 100%;
+	background: white;
 }
 
 .socialsvg {
@@ -39,18 +64,21 @@ nav a {
 	margin: 0 auto;
 	height: 2em;
 	width: 2em;
-	margin: .5em;
+	margin: 0 .5em;
 /*	box-shadow: 1px 1px 1px 1px black;*/
 }
 
-.socialsvg:hover {
-	text-decoration: underline;
+.threecolumn {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+
 }
 
-.center {
+/*.center {
 	margin: 0 auto;
 	text-align: center;
-}
+}*/
 
 #stillbg { 
     position: fixed;
@@ -72,4 +100,15 @@ nav a {
 #splash {
 	height: 93vh;
 	background: rgba(34, 34, 34, .1);
+}
+
+#playlistplus {
+	fill: #fff;
+	height: .8em;
+	width: .8em;
+	transform: rotate(45deg);
+}
+
+#player {
+	display: none;
 }
