@@ -15,12 +15,6 @@ nav {
 	float: right;
 }
 
-footer h2 {
-	color: #fff;
-	font-family: Inconsolata, sans-serif;
-	margin: auto;
-	display: inline;	
-}
 
 a {
 	text-decoration: none;
@@ -29,9 +23,34 @@ a {
 nav a {
 	float: left;
 }
+input, form, {
+		border-radius: 0;
+		margin: .5em auto;
+		-webkit-appearance: none;
+		display: inline-block;
+}
+
+input:focus {
+  	outline-color: transparent;
+  	outline-style: none;
+ }
 
 
+footer h2 {
+	color: #fff;
+	font-family: Inconsolata, sans-serif;
+	margin: auto;
+	display: inline;	
+}
 
+a.crossrotate.underslide {
+    margin-top: 1.2em;
+    font-size: .75em;
+}
+
+form#mc-embedded-subscribe-form {
+    margin-top: .8em;
+}
 .mainnav {
 	color: #fff;
 	font-size: 1.5em;
@@ -41,6 +60,11 @@ nav a {
 	margin: .5em 1em 0 2em;
 	white-space: nowrap;
 }
+
+.horizontal {
+	display: inline-block;
+}
+
 
 .underslide {
 	display: inline-block;
@@ -78,10 +102,11 @@ nav a {
 
 .plus {
 	fill: #fff;
-	height: .7em;
-	width: .7em;
+	height: .6em;
+	width: .6em;
+	font-size: 1.2em;
 	margin-left: .5em;
-	transform: rotate(45deg);
+	transform: rotate(-45deg);
 
 }
 
@@ -116,11 +141,41 @@ nav a {
 }
 
 #splash {
-	height: 93vh;
+	height: 95vh;
 	background: rgba(34, 34, 34, .1);
 }
 
+#mc_embed_signup {
+	display: inline;
+	background:#fff; 
+	clear:left; 
+	width:100%;
+}
+
+
+
+#mce-EMAIL {
+	font-family: Inconsolata, sans-serif;
+	margin: 0 2em;
+}
+
+#submit {
+	font-family: Inconsolata, sans-serif;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-weight: 200;
+	text-decoration:none;
+	text-shadow: none;
+	-webkit-transition: .25s;color;
+	-moz-transition: .25s;color;
+	-o-transition: .25s;color;
+	transition: .25s;color;
+	cursor: pointer;
+	border-radius: 3px;
+}
 
 #player {
 	display: none;
+	position: static;
 }

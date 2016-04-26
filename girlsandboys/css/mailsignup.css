@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+	background-color: black;
+}
+
 h1 {
 	color: blue;
 }
@@ -15,27 +21,26 @@ input:focus {
  }
 
 .horizontal {
-	display: inline;
+	display: inline-block;
 }
 
 #mc_embed_signup {
 	display: inline;
 	background:#fff; 
 	clear:left; 
-	font:14px Helvetica,Arial,sans-serif; 
 	width:100%;
 }
 
 #mce-EMAIL {
-	font-family: cursive;
+	font-family: Inconsolata, sans-serif;
 }
 
 #submit {
-	font-family: cursive;
+	font-family: Inconsolata, sans-serif;
 	width: 8em;
 	background-color: transparent;
 	border: none;
-	color: #000;
+	color: #fff;
 	font-size: .9em;
 	font-weight: 200;
 	padding: .5em 0;
@@ -49,6 +54,20 @@ input:focus {
 	border-radius: 3px;
 }
 
-#submit:hover {
-    background-color: #F62048;
+
+
+
+.underslide:after{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
 }
+
+.underslide:hover:after {
+	width: 100%;
+	background: white;
+}
+
