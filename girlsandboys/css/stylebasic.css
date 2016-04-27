@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Yantramanav);
+
+body {
+	background: #000;
+	font-size: 16px;
+
+}
+
+header {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:#fff;
+	padding: 1.2em;
+}
+
+nav {
+	float: right;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer h2 {
+	color: #fff;
+	font-family: Yantramanav, sans-serif;
+	font-size: .8em;
+	margin-top: .5em;
+}
+
+footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#fff;
+	padding: .5em;
+}
+
+input:focus {
+	outline: none;
+	color: white;
+}
+
+.mainnav {
+	color: #fff;
+	font-size: 1.2em;
+	font-style: none;
+	font-family: Yantramanav, sans-serif;
+	text-decoration: none;
+	margin: .5em 1em 0 1.5em;
+	white-space: nowrap;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.threecolumn {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	padding-bottom: .2em;
+}
+
+.socialsvg {
+	fill: #fff;
+	margin: 0 auto;
+	height: 1.5em;
+	width: 1.5em;
+	margin: 0 .5em;
+/*	box-shadow: 1px 1px 1px 1px black;*/
+}
+
+.underslide {
+	display: inline-block;
+}
+
+.underslide:after{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.underslide:hover:after {
+	width: 100%;
+	background: white;
+}
+
+#stillbg { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/stillbg.jpg) no-repeat;
+    background-size: cover; 
+}
+
+#mce-EMAIL {
+	background: transparent;
+	border: 2px solid white;
+	font-family: Yantramanav, sans-serif;
+	font-size: .8em;
+	padding: 2px;
+}
+
+#submit {
+	background: none;
+	border: none;
+	color: #fff;
+	font-family: Yantramanav, sans-serif;
+	font-size: .8em;
+}
+
