@@ -30,7 +30,7 @@ footer h2 {
 	color: #fff;
 	font-family: Yantramanav, sans-serif;
 	font-size: .8em;
-	margin-top: .5em;
+	padding: .3em;
 }
 
 footer {
@@ -40,6 +40,7 @@ footer {
 	width:100%;
 	color:#fff;
 	padding: .5em;
+	text-rendering: optimizeLegibility;
 }
 
 input:focus {
@@ -47,11 +48,38 @@ input:focus {
 	color: white;
 }
 
+::-webkit-input-placeholder {
+   font-family: Yantramanav, sans-serif;
+   color: rgba(255, 255, 255, .5);
+   font-size: .8em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: Yantramanav, sans-serif;
+   color:  rgba(255, 255, 255, .5); 
+   font-size: .8em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: Yantramanav, sans-serif;
+   color:  rgba(255, 255, 255, .5);
+   font-size: .8em; 
+}
+
+:-ms-input-placeholder {  
+   font-family: Yantramanav, sans-serif;
+   color: rgba(255, 255, 255, .5);  
+   font-size: .8em;
+}
+
 .mainnav {
 	color: #fff;
 	font-size: 1.2em;
 	font-style: none;
 	font-family: Yantramanav, sans-serif;
+	font-weight: 200;
+	letter-spacing: .1em;
+	text-rendering: optimizeLegibility;
 	text-decoration: none;
 	margin: .5em 1em 0 1.5em;
 	white-space: nowrap;
@@ -112,13 +140,14 @@ input:focus {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../images/stillbg.jpg) no-repeat;
+    background: url(../images/stillbg2.jpg) no-repeat;
     background-size: cover; 
 }
 
 #mce-EMAIL {
 	background: transparent;
-	border: 2px solid white;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 1);
 	font-family: Yantramanav, sans-serif;
 	font-size: .8em;
 	padding: 2px;
@@ -130,5 +159,6 @@ input:focus {
 	color: #fff;
 	font-family: Yantramanav, sans-serif;
 	font-size: .8em;
+	padding-bottom: .15em;
 }
 
