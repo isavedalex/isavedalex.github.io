@@ -28,6 +28,7 @@
 	
 	<footer>
 		<div class="threecolumn">
+<<<<<<< HEAD
 			<form action="http://isavedlatin.us5.list-manage.com/subscribe/post?u=267b05ed8a2d7293af40a7a59&amp;id=18d96d2ed4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	    		<input type="email" value="" name="EMAIL" class="email underslide" id="mce-EMAIL" placeholder="Email Address" required>
 	    		<div style="position: absolute; left: -5000px;" aria-hidden="true">
@@ -37,6 +38,22 @@
 	    			<input id="submit" type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
 	    			</div>	
 	 		</form>
+=======
+			<div class="horizontal" id="mc_embed_signup">
+				<form action="http://isavedlatin.us5.list-manage.com/subscribe/post?u=267b05ed8a2d7293af40a7a59&amp;id=18d96d2ed4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    				<div class="horizontal" id="mc_embed_signup_scroll">
+						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+    					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    					<div class="horizontal" style="position: absolute; left: -5000px;" aria-hidden="true">
+    						<input type="text" name="b_267b05ed8a2d7293af40a7a59_18d96d2ed4" tabindex="-1" value="">
+    					</div>
+    					<div class="horizontal underslide">
+    						<input id="submit" type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button underslide">
+    					</div>
+    				</div>
+				</form>
+			</div>
+>>>>>>> origin/master
 		</div>
 		<div class="center threecolumn">	
 			<a class="underslide" href="https://www.facebook.com/girlsandboysbooking/" target="blank">
@@ -61,9 +78,36 @@
 			</a>
 		</div>
 		<div class="threecolumn">
-			<a class="crossrotate" href="#">
+			<a class="crossrotate underslide" href="#">
 			<h2>Playlist</h2>
 			</a>
+		</div>
+		<div id="player">
+			<script>
+			   (function() {
+			      var script = document.createElement('script');
+			 
+			      script.type = 'text/javascript';
+			      script.async = true;
+			      script.src = 'http://sd.toneden.io/production/toneden.loader.js'
+			 
+			      var entry = document.getElementsByTagName('script')[0];
+			      entry.parentNode.insertBefore(script, entry);
+			   }());
+			 
+			   ToneDenReady = window.ToneDenReady || [];
+			   ToneDenReady.push(function() {
+			      // This is where all the action happens:
+			      ToneDen.player.create({
+			         dom: '#player',
+			         urls: [
+			            'https://soundcloud.com/girlsandboys-1/sets/april-2016'
+			         ],
+			        mini: true,
+			        useCustomPurchaseTitle: false,
+			      });
+			   });
+			</script>
 		</div>
 	</footer>
 </body>

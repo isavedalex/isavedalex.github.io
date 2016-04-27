@@ -1,4 +1,70 @@
+<<<<<<< HEAD
+=======
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+	background-color: black;
+}
+
+h1 {
+	color: blue;
+}
+>>>>>>> origin/master
+
+
+
+<<<<<<< HEAD
+
+=======
+.horizontal {
+	display: inline-block;
+}
+
+#mc_embed_signup {
+	display: inline;
+	background:#fff; 
+	clear:left; 
+	width:100%;
+}
+
+#mce-EMAIL {
+	font-family: Inconsolata, sans-serif;
+}
+
+#submit {
+	font-family: Inconsolata, sans-serif;
+	width: 8em;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-size: .9em;
+	font-weight: 200;
+	padding: .5em 0;
+	text-decoration:none;
+	text-shadow: none;
+	-webkit-transition: .25s;color;
+	-moz-transition: .25s;color;
+	-o-transition: .25s;color;
+	transition: .25s;color;
+	cursor: pointer;
+	border-radius: 3px;
+}
 
 
 
 
+.underslide:after{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.underslide:hover:after {
+	width: 100%;
+	background: white;
+}
+
+>>>>>>> origin/master
