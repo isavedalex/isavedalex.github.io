@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+}
+
+
+h1 {
+	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
+	color: #ef007d;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: .25em;
+}
+
+footer {
+	position: fixed;
+	bottom: 2px;
+	width: 100%
+}
+
+footer img {
+	height: 2.5em;
+	width: auto;
+}
+
+a { 
+	text-decoration: none;
+}
+
+a h1 {
+	color: #87c3db;
+	transition: .5s;
+}
+
+a h1:hover {
+	color: #9de3ff;
+	transition: .5s;
+}
+
+
+
+.site-footer {
+  background-color: #ef007d;
+}
+
+
+.threecolumn {
+	width: 33%;
+	float: left;
+	text-align: center;
+	margin: .5em auto;
+}
+
+.social svg {
+	fill: #fff;
+	height: 2.5em;
+	width: 2.5em;
+	margin: 0 .5em;
+	transition: .5s;
+}
+
+.social svg:hover {
+	fill: #efdae8;
+
+}
+
+#logo {
+	text-align: center;
+	height: 20em;
+	margin: 6em 0 2em;
+}
+
+#logo img {
+	height: 20em;
+	width: auto;
+}
+
+@media screen and (max-width: 650px) {
+	#logo img {
+		height: 15em;
+		width: auto;
+	}
+
+	#logo {
+		height: 15em;
+		margin: 6em 0 1.5em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	footer img {
+		height: 2em;
+		width: auto;
+	}
+
+	.social svg {
+		height: 2em;
+		width: 2em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	footer img {
+		height: 1.5em;
+		width: auto;
+	}
+
+	.social svg {
+		height: 1.5em;
+		width: 1.5em;	
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#logo img {
+		height: 10em;
+		width: auto;
+	}
+
+	#logo {
+		height: 10em;
+		margin: 6em 0 2em;
+
+	}
+
+
+}
+
+@media screen and (max-width: 400px) {
+	footer img {
+		height: 1em;
+		width: auto;
+	}
+	.social svg {
+		height: 1em;
+		width: 1em;
+	}
+}
