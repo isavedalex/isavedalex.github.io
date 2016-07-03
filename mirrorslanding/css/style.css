@@ -30,20 +30,14 @@ a {
 }
 
 a h1 {
-	color: #87c3db;
 	transition: .5s;
 }
 
 a h1:hover {
-	color: #9de3ff;
+	color: #4fb75a;
 	transition: .5s;
 }
 
-
-
-.site-footer {
-  background-color: #ef007d;
-}
 
 
 .threecolumn {
@@ -54,7 +48,7 @@ a h1:hover {
 }
 
 .social svg {
-	fill: #fff;
+	fill: #ef007d;
 	height: 2.5em;
 	width: 2.5em;
 	margin: 0 .5em;
@@ -62,7 +56,7 @@ a h1:hover {
 }
 
 .social svg:hover {
-	fill: #efdae8;
+	fill: #4fb75a;
 
 }
 
