@@ -27,11 +27,12 @@ header h3:hover {
 	transition: .5s;
 }
 
-header img {
+header svg {
 	position: fixed;
 	top: 0;
 	right: 0;
 	height: 4em;
+	width: 7.24em;
 	width: auto;
 }
 
