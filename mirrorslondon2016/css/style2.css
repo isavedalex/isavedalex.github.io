@@ -4,6 +4,16 @@
     margin: 0;
 }
 
+body {
+	background: url(../images/background.png) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
 
 h1 {
 	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
@@ -38,6 +48,15 @@ a h1:hover {
 	transition: .5s;
 }
 
+footer a {
+	transition: .5s;
+}
+
+footer a:hover {
+	color: #4fb75a;
+	transition: .5s;
+}
+
 
 
 .threecolumn {
@@ -48,7 +67,7 @@ a h1:hover {
 }
 
 .social svg {
-	fill: #ef007d;
+	fill: #fff;
 	height: 2.5em;
 	width: 2.5em;
 	margin: 0 .5em;
@@ -62,23 +81,23 @@ a h1:hover {
 
 #logo {
 	text-align: center;
-	height: 20em;
+	height: 10em;
 	margin: 6em 0 2em;
 }
 
 #logo img {
-	height: 20em;
+	height: 10em;
 	width: auto;
 }
 
 @media screen and (max-width: 650px) {
 	#logo img {
-		height: 15em;
+		height: 8em;
 		width: auto;
 	}
 
 	#logo {
-		height: 15em;
+		height: 8em;
 		margin: 6em 0 1.5em;
 	}
 
@@ -111,12 +130,12 @@ a h1:hover {
 
 @media screen and (max-width: 450px) {
 	#logo img {
-		height: 10em;
+		height: 5em;
 		width: auto;
 	}
 
 	#logo {
-		height: 10em;
+		height: 5em;
 		margin: 6em 0 2em;
 
 	}
