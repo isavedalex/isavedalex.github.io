@@ -5,15 +5,8 @@
 }
 
 body {
-	background: url(../images/background.png) no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-color: #ef007d;
 }
-
-
-
 
 h1 {
 	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
@@ -57,7 +50,10 @@ footer a:hover {
 	transition: .5s;
 }
 
-
+.splash img {
+	width: 100%;
+	height: auto;
+}
 
 .threecolumn {
 	width: 33%;
@@ -77,6 +73,28 @@ footer a:hover {
 .social svg:hover {
 	fill: #4fb75a;
 
+}
+
+.venue svg {
+	fill: #fff;
+	height: 2.5em;
+	width: 2.5em;
+	transition: .5s
+}
+
+.venue svg:hover {
+	fill: #4fb75a;
+
+}
+
+.poster {
+	width: 40em;
+	margin: 12em auto 4em;
+}
+
+#poster {
+	width: 100%;
+	height: auto;
 }
 
 #logo {

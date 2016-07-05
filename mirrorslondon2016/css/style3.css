@@ -1,0 +1,389 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+}
+
+body {
+	background-color: #ef007d;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 4em;
+	background-color: #ef007d;
+}
+
+header div {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+header h3 {
+	transition: .5s;
+}
+
+header h3:hover {
+	color: #4fb75a;
+	transition: .5s;
+}
+
+header svg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 4em;
+	width: 7.24em;
+	width: auto;
+}
+
+header h3 {
+	color: #fff;
+	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
+	margin: 1.5em 0 0 1em;
+}
+
+nav {
+	display: none;
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	margin: 2em;
+	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	transition: .5s;
+}
+
+nav a:hover{
+	color: #4fb75a;
+	transition: .5s;
+}
+
+footer {
+	margin-top: 6em;
+	bottom: 0px;
+	width: 100%
+}
+
+footer img {
+	height: 2.5em;
+	width: auto;
+}
+
+h1 {
+	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: .25em;
+}
+
+
+a { 
+	text-decoration: none;
+}
+
+a h1 {
+	transition: .5s;
+}
+
+a h1:hover {
+	color: #4fb75a;
+	transition: .5s;
+}
+
+footer a {
+	transition: .5s;
+}
+
+footer a:hover {
+	color: #4fb75a;
+	transition: .5s;
+}
+
+
+
+.threecolumn {
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.social svg {
+	fill: #fff;
+	height: 2.5em;
+	width: 2.5em;
+	margin: 0 .5em;
+	transition: .5s;
+}
+
+.social svg:hover {
+	fill: #4fb75a;
+
+}
+
+.venue svg {
+	fill: #fff;
+	height: 2.5em;
+	width: 2.5em;
+	transition: .5s
+}
+
+.venue svg:hover {
+	fill: #4fb75a;
+
+}
+
+.sponsors svg {
+	fill: #fff;
+	height: 2.5em;
+	width: auto;
+	transition: .5s
+}
+
+.sponsors svg:hover {
+	fill: #4fb75a;
+
+}
+
+.poster {
+	width: 40em;
+	margin: 8em auto 4em;
+}
+
+#poster {
+	width: 100%;
+	height: auto;
+}
+
+#hamburger {
+  display: none;
+}
+
+.menu {
+  display: block;
+  background-color: #ef007d;
+  width: 100%;
+  height: 0px;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.menu a {
+	text-decoration: none;
+  	color: #fff;
+  	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
+  	text-transform: uppercase;
+  	display: block;
+  	text-align: center;
+   	visibility: hidden;
+   	transition: visibility 0s, opacity 2.5s linear;
+}
+
+.menu a:hover{
+	color: #4fb75a;
+	transition: .5s;
+}
+
+.menuicon {
+  position: absolute;
+  top: 1.25em;
+  left: 1em;
+  display: block;
+  cursor: pointer;
+  height: 21px;
+  width: 25px;
+}
+.menuicon span {
+  display: none;
+  top: 8px;
+  width: 25px;
+  height: 5px;
+  background-color: #fff;
+  position: relative;
+  -webkit-transition-duration: 0;
+  -moz-transition-duration: 0;
+  -ms-transition-duration: 0;
+  -o-transition-duration: 0;
+  transition-duration: 0;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.menuicon span::after, .menuicon span::before {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  background-color: #fff;
+  -webkit-transition-property: margin, -webkit-transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0;
+  -moz-transition-delay: 0.2s, 0;
+  -ms-transition-delay: 0.2s, 0;
+  -o-transition-delay: 0.2s, 0;
+  transition-delay: 0.2s, 0;
+}
+.menuicon span::before {
+  margin-top: -8px;
+}
+.menuicon span::after {
+  margin-top: 8px;
+}
+
+#hamburger:checked ~ .menu {
+  height: 9em;
+  z-index: -1;
+}
+
+#hamburger:checked ~ .menu a {
+	margin: 1em 0;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 2.5s, opacity 2.5s linear;
+}
+
+#hamburger:checked ~ .menuicon span {
+  background-color: transparent;
+}
+#hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after {
+  margin-top: 0px;
+  -webkit-transition-delay: 0, 0.2s;
+  -moz-transition-delay: 0, 0.2s;
+  -ms-transition-delay: 0, 0.2s;
+  -o-transition-delay: 0, 0.2s;
+  transition-delay: 0, 0.2s;
+}
+#hamburger:checked ~ .menuicon span::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#hamburger:checked ~ .menuicon span::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 780px) {
+	nav a {
+		margin: 1em;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.poster {
+		width: 30em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	nav a {
+		margin: .5em;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	h1 {
+		font-size: 1.5em;
+	}
+
+	footer img {
+		height: 2em;
+		width: auto;
+	}
+
+	.social svg, .venue svg {
+		height: 2em;
+		width: 2em;
+	}
+
+	.sponsors svg {
+		height: 2em;
+	}
+
+	.poster {
+		width: 25em;
+	}
+}
+
+/*@media screen and (max-width: 600px) {
+	header h3 {
+		display: none;
+	}
+
+	nav {
+		display: none;
+	}
+	.menuicon span::after, .menuicon span::before {
+		display: block;
+	}
+
+	.menuicon span {
+		display: block;
+	}
+}
+*/
+@media screen and (max-width: 500px) {
+	footer img {
+		height: 1.5em;
+		width: auto;
+	}
+
+	.social svg, .venue svg{
+		height: 1.5em;
+		width: 1.5em;	
+	}
+
+	.sponsors svg {
+		height: 1.5em;
+	}
+
+	.poster {
+		width: 20em;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+	footer img {
+		height: 1em;
+		width: auto;
+	}
+	.social svg, .venue svg {
+		height: 1em;
+		width: 1em;
+	}
+
+	.sponsors svg {
+		height: 1em;
+	}
+
+}
