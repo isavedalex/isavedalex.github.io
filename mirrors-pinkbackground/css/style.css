@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #ef007d;
+	background-color: #e50c7f;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
 	top: 0;
 	width: 100%;
 	height: 4em;
-	background-color: #ef007d;
+	background-color: #e50c7f;
 }
 
 header div {
@@ -176,7 +176,7 @@ svg {
 
 .menu {
   display: block;
-  background-color: #ef007d;
+  background-color: #e50c7f;
   width: 100%;
   height: 0px;
   -webkit-transition-duration: 0.2s;
