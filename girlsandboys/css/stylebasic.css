@@ -20,10 +20,18 @@
   /* Legacy iOS */
 }
 
-body {
-	background: #000;
-	font-size: 16px;
-
+html, body {
+	background: url(../images/rooftop.png)
+	fixed center center no-repeat
+	;
+	background-size: cover;
+	background-color: #151515;
+	width: 100%;
+	height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	color: #fff;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
 }
 
 header {
@@ -54,13 +62,13 @@ footer h2 {
 }
 
 footer {
-	position:fixed;
-	bottom:0px;
+	position: fixed;
+	bottom: 10px;
 	left:0px;
 	width:100%;
 	color:#fff;
 	padding: .5em;
-	text-rendering: optimizeLegibility;
+	height: 2em;
 }
 
 input:focus {
@@ -97,7 +105,6 @@ input:focus {
 	font-size: 1.1em;
 	font-weight: 100;
 	font-family: clear-light, sans-serif;
-	text-rendering: optimizeLegibility;
 	text-decoration: none;
 	margin: .5em 1em 0 1.5em;
 }
@@ -121,10 +128,9 @@ input:focus {
 .socialsvg {
 	fill: #fff;
 	margin: 0 auto;
-	height: 1.5em;
-	width: 1.5em;
+	height: 1.7em;
+	width: 1.7em;
 	margin: 0 .5em;
-/*	box-shadow: 1px 1px 1px 1px black;*/
 }
 
 .underslide {
@@ -145,25 +151,13 @@ input:focus {
 	background: white;
 }
 
-
-#stillbg { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(../images/stillbg2.jpg) no-repeat;
-    background-size: cover; 
+.hidden { 
+	display: none; 
 }
 
-#mce-EMAIL {
+
+
+#input {
 	background: transparent;
 	border: none;
 	border-bottom: 2px solid rgba(255, 255, 255, 1);

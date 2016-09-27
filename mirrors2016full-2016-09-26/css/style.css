@@ -4,8 +4,13 @@
     margin: 0;
 }
 
+html, body {
+	height: 100%;
+}
+
+
 body {
-	background-color: #fff;
+	background-color: #e50c7f;
 }
 
 header {
@@ -13,7 +18,7 @@ header {
 	top: 0;
 	width: 100%;
 	height: 4em;
-	background-color: #ef007d;
+	background-color: #e50c7f;
 }
 
 header div {
@@ -47,7 +52,6 @@ header h3 {
 }
 
 nav {
-	display: none;
 	text-align: center;
 	margin-top: 1.5em;
 }
@@ -67,24 +71,34 @@ nav a:hover{
 	transition: .5s;
 }
 
-footer {
-	margin-top: 6em;
-	bottom: 0px;
-	width: 100%
-}
-
 footer img {
 	height: 2.5em;
 	width: auto;
 }
 
-h1 {
+h1, h2, h3 {
 	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
-	color: #ef007d;
+	color: #fff;
 	font-size: 2em;
 	text-align: center;
 	text-transform: uppercase;
 	margin: .25em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p {
+	font-family: "Century Gothic", Muli, Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-align: justify;
+	line-height: 1.5em;
+	margin: 2em 0;
 }
 
 
@@ -114,7 +128,10 @@ svg {
 	max-width: 100%;
 }
 
-
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -4em;
+}
 
 .threecolumn {
 	width: 33%;
@@ -123,7 +140,7 @@ svg {
 }
 
 .social svg {
-	fill: #ef007d;
+	fill: #fff;
 	height: 2.5em;
 	width: 2.5em;
 	margin: 0 .5em;
@@ -136,7 +153,7 @@ svg {
 }
 
 .venue svg {
-	fill: #ef007d;
+	fill: #fff;
 	height: 2.5em;
 	width: 2.5em;
 	transition: .5s
@@ -148,7 +165,7 @@ svg {
 }
 
 .sponsors svg {
-	fill: #ef007d;
+	fill: #fff;
 	height: 2.5em;
 	width: auto;
 	transition: .5s
@@ -159,15 +176,85 @@ svg {
 
 }
 
+.tickets {
+	text-align: center;
+}
+
+.tickets h2 {
+	font-size: 1.5em;
+	margin-top: 8em;
+}
+
+.tickets svg {
+	fill: #fff;
+	width: 15em;
+	height: auto;
+	transition: .5s;
+	margin: 6em auto 0;
+	text-align: center;
+	transition: .5s;
+}
+
+.tickets svg:hover {
+	fill: #4fb75a;
+	transition: .5s;
+}
+
+.lineup, .about {
+	width: 30em;
+	margin: 8em auto;
+}
+
+.lineup h1 {
+	margin-bottom: 2.5em;
+}
+
+.lineup h3 {
+	margin: 1em 0;
+}
+
+.about span {
+	font-weight: 800;
+	color: #4fb75a;
+}
+
+.about a {
+	text-decoration: underline;
+	color: #fff;
+	transition: .5s;
+}
+
+.about a:hover {
+	color: #4fb75a;
+	transition: .5s;
+}
+
 .poster {
 	width: 40em;
 	margin: 8em auto 4em;
 }
 
+.bottomh1 {
+	margin-bottom: 3em;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 4em; 
+}
+
+
 #poster {
 	width: 100%;
 	height: auto;
 	-webkit-height: auto;
+}
+
+#manymore {
+	margin-top: 5em;
 }
 
 #hamburger {
@@ -176,7 +263,7 @@ svg {
 
 .menu {
   display: block;
-  background-color: #ef007d;
+  background-color: #e50c7f;
   width: 100%;
   height: 0px;
   -webkit-transition-duration: 0.2s;
@@ -297,6 +384,26 @@ svg {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+#mobile-social-column {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+	#social-column {
+		display: none;
+	}
+	#mobile-social-column {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: 1em;
+	}
+	.threecolumn {
+		width: 50%;
+	}
+
+}
+
 @media screen and (max-width: 780px) {
 	nav a {
 		margin: 1em;
@@ -306,6 +413,17 @@ svg {
 @media screen and (max-width: 750px) {
 	.poster {
 		width: 30em;
+	}
+
+	.tickets {
+		margin-bottom: 4em;
+	}
+
+	.tickets svg {
+		display: block;
+		height: 15em;
+		width: auto;
+		margin: 0 auto;
 	}
 }
 
@@ -339,7 +457,7 @@ svg {
 	}
 }
 
-/*@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	header h3 {
 		display: none;
 	}
@@ -355,24 +473,31 @@ svg {
 		display: block;
 	}
 }
-*/
+
 @media screen and (max-width: 520px) {
 	footer img {
 		height: 1.5em;
 		width: auto;
 	}
 
-	.social svg, .venue svg{
-		height: 1.5em;
-		width: 1.5em;	
-	}
-
-	.sponsors svg {
-		height: 1.5em;
-	}
-
 	.poster {
 		width: 20em;
+	}
+
+	.lineup, .about {
+	width: 25em;
+
+	}
+
+	.threecolumn {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.lineup, .about {
+	width: 20em;
 	}
 }
 
@@ -381,14 +506,6 @@ svg {
 	footer img {
 		height: 1em;
 		width: auto;
-	}
-	.social svg, .venue svg {
-		height: 1em;
-		width: 1em;
-	}
-
-	.sponsors svg {
-		height: 1em;
 	}
 
 }

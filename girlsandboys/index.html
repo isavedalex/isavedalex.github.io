@@ -5,6 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/stylebasic.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("#playlist").click(function(){
+		        $("#player").fadeToggle("slow");
+		        // $("footer").slidetoggle({height: '7em'}, "slow");
+		    });
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -15,9 +24,6 @@
 			<a class="mainnav underslide" href="#">Contact</a>
 		</nav>
 	</header>
-	<div class="video-containter clearfix" id="splash">
-	<!-- 	<img id="stillbg" src="images/stillbg2.jpg"> -->
-	</div>
 
 
 		<!-- 	<svg class="plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -28,13 +34,10 @@
 	
 	<footer>
 		<div class="threecolumn">
-			<form action="http://tumblr.us12.list-manage.com/subscribe/post?u=9bbe8238d6e730db1cac503c9&amp;id=30977663e0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	    		<input type="email" value="" name="EMAIL" class="email underslide" id="mce-EMAIL" placeholder="Email Address" required>
-	    		<!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"> -->
-	    		<!-- <input type="text" name="b_267b05ed8a2d7293af40a7a59_18d96d2ed4" tabindex="-1" value="">
-	    		</div> -->
-	    		<div class="underslide">
-	    			<input id="submit" type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+			<form action="http://tumblr.us12.list-manage.com/subscribe/post?u=9bbe8238d6e730db1cac503c9&amp;id=30977663e0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    		<input id="input" type="email" value="" name="EMAIL" class="email underslide" placeholder="Email Address" required>
+		    		<div class="underslide">
+	    			<input id="submit" type="submit" value="Sign Up" name="subscribe" >
 	    		</div>	
 	 		</form>
 		</div>
@@ -61,10 +64,39 @@
 			</a>
 		</div>
 		<div class="threecolumn">
-			<a class="crossrotate underslide" href="#">
+			<a id="playlist" class="crossrotate underslide" href="#">
 			<h2>Playlist</h2>
 			</a>
 		</div>
+		<br>
+		<div id="player" class="hidden">
+		</div>	
 	</footer>
+	<script>
+	   (function() {
+	      var script = document.createElement('script');
+	 
+	      script.type = 'text/javascript';
+	      script.async = true;
+	      script.src = 'http://sd.toneden.io/production/toneden.loader.js'
+	 
+	      var entry = document.getElementsByTagName('script')[0];
+	      entry.parentNode.insertBefore(script, entry);
+	   }());
+	 
+	   ToneDenReady = window.ToneDenReady || [];
+	   ToneDenReady.push(function() {
+	      ToneDen.player.create({
+	         dom: '#player',
+	         urls: [
+	            'https://soundcloud.com/girlsandboys-1/sets/august-2016-1'
+	         ],     
+	        mini: true,
+      		skin: 'dark',
+      		visualizerType: 'bars'
+
+	      });
+	   });
+	</script>
 </body>
 </html>
