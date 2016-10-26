@@ -33,14 +33,14 @@
 	<!-- Transition Script -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-		    $(".content").css("display", "none");
+		    $(".overlay").css("display", "none");
 		 
-		    $(".content").fadeIn(2000);
+		    $(".overlay").fadeIn(2000);
 		 
 		    $("a.transition").click(function(event){
 		        event.preventDefault();
 		        linkLocation = this.href;
-		        $(".content").fadeOut(1000, redirectPage);      
+		        $(".overlay").fadeOut(1000, redirectPage);      
 		    });
 		         
 		    function redirectPage() {
@@ -52,10 +52,10 @@
 <body>
 	<header>
 		<nav>
-			<a class="mainnav underslide transition" href="signup.html">Sign Up</a>
-			<a class="mainnav underslide transition" href="events.html">Events</a>
+			<a class="mainnav underslide" href="signup.html">Sign Up</a>
+			<a class="mainnav underslide" href="events.html">Events</a>
 			<a class="mainnav underslide" href="http://girlsandboyslikemusic.tumblr.com/" target="blank">Blog</a>
-			<a class="mainnav underslide transition" href="about.html">About</a>
+			<a class="mainnav underslide" href="about.html">About</a>
 			<a class="mainnav underslide" href="https://soundcloud.com/girlsandboys-1/sets/september-2016" target="blank">Playlist</a>
 		</nav>
 		<div class=mobile-nav>
@@ -63,20 +63,54 @@
 		  	<button class="cross">&#735;</button>
 			<div class="menu">
 		  		<ul>
-		  			<a class="transition" href="index.html"><li>HOME</li></a>
-		  			<a class="transition" href="signup.html"><li>SIGN UP</li></a>
-				    <a class="transition" href="events.html"><li>EVENTS</li></a>
+		  			<a href="index.html"><li>HOME</li></a>
+		  			<a href="signup.html"><li>SIGN UP</li></a>
+				    <a href="events.html"><li>EVENTS</li></a>
 				    <a href="http://girlsandboyslikemusic.tumblr.com/" target="blank"><li>BLOG</li></a>
-				    <a class="transition" href="about.html"><li>ABOUT</li></a>
+				    <a href="about.html"><li>ABOUT</li></a>
 				    <a href="https://soundcloud.com/girlsandboys-1/sets/september-2016" target="blank"><li>PLAYLIST</li></a>
 		  		</ul>
 			</div> 
 		</div>
 	</header>
-	<div class="content">
-		
-	</div>
-	
+		<div class="overlay">
+			<a href="index.html">
+				<button class="overlay-close transition">&#735;</button>
+			</a>
+			<div class="upcoming-events">
+				<h2>UPCOMING EVENTS</h2>
+				<!-- UPCOMING EVENT 1 -->
+				<a href="https://dice.fm/event/irah-10th-nov-the-waiting-room-london-tickets" target="blank">
+					<img src="images/events/upcoming/01.jpg" alt="irah-10th-nov-the-waiting-room-london">
+				</a>
+				<!-- UPCOMING EVENT 2 -->
+				<a href="#">
+					<img src="images/events/upcoming/02.jpg">
+				</a>
+<!-- 				UPCOMING EVENT 3 -->
+				<a href="#">
+					<img src="images/events/upcoming/03.jpg">
+				</a>
+			</div>
+			<div class="previous-events">
+				<h2>PREVIOUS EVENTS</h2>
+				<img src="images/events/previous/01.jpg">
+				<img src="images/events/previous/02.jpg">
+				<img src="images/events/previous/03.jpg">
+				<img src="images/events/previous/04.jpg">
+				<img src="images/events/previous/05.jpg">
+				<img src="images/events/previous/06.jpg">
+				<img src="images/events/previous/07.jpg">
+				<img src="images/events/previous/08.jpg">
+				<img src="images/events/previous/09.jpg">
+				<img src="images/events/previous/10.jpg">
+				<img src="images/events/previous/11.jpg">
+				<img src="images/events/previous/12.jpg">
+				<img src="images/events/previous/13.jpg">
+				<img src="images/events/previous/14.jpg">
+				<img src="images/events/previous/15.jpg">
+			</div>
+		</div>
 	<footer>
 			<a class="underslide" href="https://www.facebook.com/girlsandboysbooking/" target="blank">
 				<svg class="socialsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
