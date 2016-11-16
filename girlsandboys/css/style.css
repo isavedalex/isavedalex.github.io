@@ -22,7 +22,6 @@ html, body {
 	color: #fff;
 	font-size: 20px;
 	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
-	letter-spacing: .2em;
 	text-rendering: optimizeLegibility;
 	overflow: auto;
 }
@@ -45,9 +44,7 @@ nav {
 	text-transform: uppercase;
 }
 
-p {
-	letter-spacing: .2em;
-}
+
 
 a {
 	text-decoration: none;
@@ -77,9 +74,7 @@ form.validate {
 	margin: 10em 0 0;
 }
 
-input {
-	letter-spacing: .2em;
-}
+
 
 
 input:focus {
@@ -178,7 +173,6 @@ input:-webkit-autofill {
 .overlay h2 {
 	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.3em;
-	letter-spacing: .2em;
 	margin-bottom: 1.5em;
 }
 
@@ -203,13 +197,11 @@ input:-webkit-autofill {
 	margin: .5em 0 1em;
 	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-weight: 100;
-	letter-spacing: .1em;
 	line-height: 1.2em;
 }
 
 .content-center a {
 	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
-	letter-spacing: .2em;
 	line-height: 1.2em;
 	margin: 1em 0;
 	color: #fff;
@@ -352,7 +344,6 @@ input:-webkit-autofill {
 .mobile-nav {
 	font-size: 1.1em;
 	text-decoration: none;
-	letter-spacing: .1em;
 	display: none;
 }
 
