@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+@font-face {
+	font-family: 'Futura Medium';
+	src: url('../fonts/Futura-Medium.eot');
+	src: url('../fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura-Medium.woff') format('woff'),
+		url('../fonts/Futura-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
 html, body {
-	background: url(../images/rooftop.png)
+	background: url(../images/rooftop.jpg)
 	fixed left center no-repeat;
 	background-size: cover;
 	background-color: #151515;
 	width: 100%;
 	height: 100vh;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	color: #fff;
 	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	letter-spacing: .2em;
 	text-rendering: optimizeLegibility;
+	overflow: auto;
 }
 
 header {
@@ -30,7 +43,10 @@ nav {
 	float: right;
 	color: white;
 	text-transform: uppercase;
-	letter-spacing: .1em;
+}
+
+p {
+	letter-spacing: .2em;
 }
 
 a {
@@ -61,6 +77,10 @@ form.validate {
 	margin: 10em 0 0;
 }
 
+input {
+	letter-spacing: .2em;
+}
+
 
 input:focus {
 	outline: none;
@@ -68,31 +88,27 @@ input:focus {
 }
 
 ::-webkit-input-placeholder {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
    	color: rgba(255, 255, 255, .5);
-   	font-size: 1.2em;
    	line-height: 1.2em;
 
 }
 
 :-moz-placeholder { /* Firefox 18- */
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
    	color:  rgba(255, 255, 255, .5); 
-   	font-size: 1.2em;
    	line-height: 1.2em;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
    	color:  rgba(255, 255, 255, .5);
-   	font-size: 1.2em; 
    	line-height: 1.2em;
 }
 
 :-ms-input-placeholder {  
-	font-family: 'Open Sans', sans-serif;
-   	color: rgba(255, 255, 255, .5);  
-   	font-size: 1.2em;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+   	color: rgba(255, 255, 255, .5); 
    	line-height: 1.2em;
 }
 
@@ -103,8 +119,7 @@ input:-webkit-autofill {
 .mainnav {
 	color: #fff;
 	font-size: 1.1em;
-	font-weight: 100;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	text-decoration: none;
 	margin: 1em 1em 0 1.5em;
 }
@@ -161,12 +176,14 @@ input:-webkit-autofill {
 }
 
 .overlay h2 {
-	font-family: 'open sans', sans-serif;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.3em;
-	font-weight: 600;
+	letter-spacing: .2em;
+	margin-bottom: 1.5em;
 }
 
 .content {
+	display: hidden;
     width: 80%;
     margin: 0 auto;
     padding: 4em 0;
@@ -184,18 +201,17 @@ input:-webkit-autofill {
 
 .content-center p {
 	margin: .5em 0 1em;
-	font-family: 'open sans', sans-serif;
-	font-size: 1.2em;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-weight: 100;
 	letter-spacing: .1em;
 	line-height: 1.2em;
 }
 
 .content-center a {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.2em;
-	font-weight: 600;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	letter-spacing: .2em;
 	line-height: 1.2em;
+	margin: 1em 0;
 	color: #fff;
 	text-decoration: none;
 }
@@ -210,10 +226,9 @@ input:-webkit-autofill {
 	height: auto;
 }
 
-.upcoming-events h2 {
+.upcoming-events, .previous-events h2 {
 	text-align: center;
 	margin: 0 0 2em;
-	letter-spacing: .1em;
 }
 
 .upcoming-events img {
@@ -228,11 +243,6 @@ input:-webkit-autofill {
 	padding: 0 0 4em;
 }
 
-.previous-events h2 {
-	text-align: center;
-	margin: 0 0 2em;
-	letter-spacing: .1em;
-}
 
 .previous-events img {
 	width: 16%;
@@ -289,16 +299,48 @@ input:-webkit-autofill {
 	width:100%; 
 	position:absolute; 
 	text-align:center;
-	font-family: 'open sans', sans-serif;
+	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 }
 
-.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding:15px 0 15px 0; }
-.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; }
-.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
-.menu ul li a:hover {  color: #fff; text-decoration:none;}
-.menu a{text-decoration:none; color:white;}
-.menu a:hover{text-decoration:none; color:white;}
+.menu ul {
+	background: #181818;
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+}
+
+.menu li {
+	display: block;   
+	padding:15px 0 15px 0; 
+}
+
+.menu li:hover {
+	display: block;    
+	background:#2e2e2e; 
+	padding:15px 0 15px 0; 
+}
+
+.menu ul li a { 
+	text-decoration:none;  
+	margin: 0px; 
+	color:#fff;
+}
+
+.menu ul li a:hover {  
+	color: #fff; 
+	text-decoration:none;
+}
+
+.menu a {
+	text-decoration:none; 
+	color:white;
+}
+
+.menu a:hover {
+	text-decoration:none; 
+	color:white;
+}
 
 .glyphicon-home{
   color:white; 
@@ -309,7 +351,6 @@ input:-webkit-autofill {
 
 .mobile-nav {
 	font-size: 1.1em;
-	font-weight: 100;
 	text-decoration: none;
 	letter-spacing: .1em;
 	display: none;
@@ -333,19 +374,24 @@ input:-webkit-autofill {
 	border: none;
 	color: #fff;
 	font-size: 1.3em;
-	font-weight: 600;
 	padding-bottom: .15em;
 	width: auto;
 	margin: 1.5em auto 0;
 }
 
+@media screen and (min-width: 2419px) {
+	html, body {
+	background: url(../images/rooftop-hi-res.jpg)
+}
+}
+
 @media screen and (max-width: 1100px) {
-		.upcoming-events img {
+	.upcoming-events img {
 		width: 35%;
 }
 
-.previous-events img {
-	width: 20%;
+	.previous-events img {
+		width: 20%;
 
 }
 }
@@ -360,28 +406,28 @@ input:-webkit-autofill {
 		width: 40%;
 }
 
-.previous-events img {
-	width: 28%;
+	.previous-events img {
+		width: 28%;
 }
 
 }
 
 @media screen and (max-width: 750px) {
-		.upcoming-events img {
+	.upcoming-events img {
 		width: 50%;
 }
 
-.previous-events img {
-	width: 30%;
-	height: auto;
-	margin: 1em 1em;
+	.previous-events img {
+		width: 30%;
+		height: auto;
+		margin: 1em 1em;
 }
 
 }
 
 
-@media screen and (max-width: 600px) {
-		.mainnav {
+@media screen and (max-width: 640px) {
+	.mainnav {
 		display: none;
 	}
 	.mobile-nav {
