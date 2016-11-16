@@ -24,6 +24,7 @@ html, body {
 	font-family: 'Futura Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	overflow: auto;
+	letter-spacing: .2em;
 }
 
 header {
