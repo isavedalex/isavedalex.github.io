@@ -199,6 +199,7 @@ input:-webkit-autofill {
 	font-family:  Futura, 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-weight: 100;
 	line-height: 1.2em;
+	letter-spacing: normal;
 }
 
 .content-center a {
