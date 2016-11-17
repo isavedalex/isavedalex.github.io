@@ -484,3 +484,12 @@ input:-webkit-autofill {
 	}
 }
 
+@media screen and (max-height: 568px) {
+	form.validate {
+		margin: 3.5em 0 0 ;
+	}
+		.content-center {
+		padding: 4em 0;
+	}
+}
+
