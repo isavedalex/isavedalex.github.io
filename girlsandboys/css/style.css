@@ -198,7 +198,7 @@ input:-webkit-autofill {
 	margin: .5em 0 1em;
 	font-family:  Futura, 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-weight: 100;
-	line-height: 1.2em;
+	line-height: 1.5em;
 	letter-spacing: normal;
 }
 
@@ -208,6 +208,8 @@ input:-webkit-autofill {
 	margin: 1em 0;
 	color: #fff;
 	text-decoration: none;
+	font-variant: small-caps;
+	word-break: break-word;
 }
 
 .centered {
@@ -466,5 +468,19 @@ input:-webkit-autofill {
 		width: 70%;
 
 }
+}
+
+@media screen and (max-height: 667px) {
+	.content-center {
+		padding: 7em 0;
+	}
+
+	.upcoming-events {
+		padding: 3em 0 2em;
+	}
+
+	form.validate {
+		margin: 6.5em 0 0;
+	}
 }
 
