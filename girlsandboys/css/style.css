@@ -117,7 +117,8 @@ input:-webkit-autofill {
 	font-size: 1.1em;
 	font-family:  Futura, 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	text-decoration: none;
-	margin: 1em 1em 0 1.5em;
+	margin: .5em .5em 0 1em;
+	padding: .5em;
 }
 
 
@@ -470,7 +471,7 @@ input:-webkit-autofill {
 }
 }
 
-@media screen and (max-height: 667px) {
+@media screen and (max-height: 667px) and (max-width: 667px) {
 	.content-center {
 		padding: 7em 0;
 	}
@@ -484,7 +485,7 @@ input:-webkit-autofill {
 	}
 }
 
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 640px) and (max-width: 640px) {
 	form.validate {
 		margin: 3.5em 0 0 ;
 	}
