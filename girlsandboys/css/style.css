@@ -21,7 +21,7 @@ html, body {
 	-moz-osx-font-smoothing: grayscale;
 	color: #fff;
 	font-size: 20px;
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	overflow: auto;
 	letter-spacing: .2em;
@@ -84,26 +84,26 @@ input:focus {
 }
 
 ::-webkit-input-placeholder {
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
    	color: rgba(255, 255, 255, .5);
    	line-height: 1.2em;
 
 }
 
 :-moz-placeholder { /* Firefox 18- */
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
    	color:  rgba(255, 255, 255, .5); 
    	line-height: 1.2em;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
    	color:  rgba(255, 255, 255, .5);
    	line-height: 1.2em;
 }
 
 :-ms-input-placeholder {  
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
    	color: rgba(255, 255, 255, .5); 
    	line-height: 1.2em;
 }
@@ -115,7 +115,7 @@ input:-webkit-autofill {
 .mainnav {
 	color: #fff;
 	font-size: 1.1em;
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	text-decoration: none;
 	margin: 1em 1em 0 1.5em;
 }
@@ -172,7 +172,7 @@ input:-webkit-autofill {
 }
 
 .overlay h2 {
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.3em;
 	margin-bottom: 1.5em;
 }
@@ -196,13 +196,13 @@ input:-webkit-autofill {
 
 .content-center p {
 	margin: .5em 0 1em;
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	font-weight: 100;
 	line-height: 1.2em;
 }
 
 .content-center a {
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 	line-height: 1.2em;
 	margin: 1em 0;
 	color: #fff;
@@ -292,7 +292,7 @@ input:-webkit-autofill {
 	width:100%; 
 	position:absolute; 
 	text-align:center;
-	font-family: 'Futura Medium', 'Futura-Medium', 'Open Sans', 'Trebuchet MS', Arial, sans-serif;
+	font-family:  'Open Sans', 'Trebuchet MS', Arial, sans-serif;
 }
 
 .menu ul {
