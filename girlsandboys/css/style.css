@@ -5,8 +5,8 @@
 	src: url('../fonts/Futura-Medium.eot');
 	src: url('../fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Futura-Medium.woff') format('woff'),
-		url('../fonts/Futura-Medium.ttf') format('truetype');
-	font-weight: 500;
+		url('../fonts/Futura-Medium.ttf') format('truetype'),
+		url('../fonts/Futura-Medium.svg') format('svg');
 }
 
 html, body {
@@ -25,6 +25,7 @@ html, body {
 	overflow: auto;
 	letter-spacing: .2em;
 }
+
 
 header {
 	position:fixed;
