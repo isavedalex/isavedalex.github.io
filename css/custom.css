@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* Owl Carousel Bootstrap Custom CSS */
 
 /* Header Navigation */
@@ -115,6 +117,15 @@ padding: 8px 12px;
 }
 
 .wrap_title{margin-bottom: 30px;}
+
+
+h1.h1_home.wow.fadeIn.animated.animated {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3.h3_home.wow.fadeIn.animated.animated {
+    font-size: 1.6em;
+}
 
 /*  Owl */
 #owl-demo .item{
