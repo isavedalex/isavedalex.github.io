@@ -167,17 +167,9 @@ img#profilepic {
 /* Footer */
 
 footer {
-	font-size: .7em !important;
-	text-align: center;
-	background-color: #32465A !important;
-	color: #fff !important;
+	display: none;
 }
 
-
-footer a {
-	color: #fff !important;
-	font-weight: normal !important;
-}
 
 #footer{
 	padding: 20px 0px;
