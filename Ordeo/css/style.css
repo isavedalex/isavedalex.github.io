@@ -2,6 +2,11 @@
 
 * {-webkit-font-smoothing: antialiased;}
 
+div {
+  box-sizing: border-box;
+}
+
+
 div#business-card {
   padding: 7em;
 }
