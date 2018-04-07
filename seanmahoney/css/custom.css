@@ -1,0 +1,49 @@
+nav ul {
+	margin: 0 auto;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	line-height: 6.5rem;	
+	list-style: none;
+	margin: 0 17px;
+	font-weight: 600;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+
+}
+
+section {
+	margin-top: 10rem;
+}
+
+
+.navbar {
+	margin-top: 20rem;
+	display: block;
+	width: 100%;
+	height: 6.5rem;
+	z-index: -99;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.maintitle {
+	margin-top: 25%;
+	text-align: center;
+	letter-spacing: .1rem;
+}
+
+.subtitle {
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: .1rem;
+}
+
+.aboutme {
+
+}
+
