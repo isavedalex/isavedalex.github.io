@@ -84,7 +84,7 @@ p {
 	text-align: center;
 }
 
-.workrow {
+.centerrow {
 	text-align: center;
 	max-width: 640px;
 	margin: 0 auto 5rem;
@@ -92,13 +92,19 @@ p {
 	border-bottom: 1px solid #bbb;
 }
 
-.workrow iframe {
+.centerrow iframe {
 	max-width: 100%;
 	height: 100!important;
 }
 
-.workrow h5,h6 {
+.centerrow h5,h6 {
 	text-align: justify;
+}
+
+.borderbottom {
+    max-width: 640px;
+    border-bottom: 1px solid #bbb;
+    margin: 0 auto 2rem;
 }
 
 .centertext {
@@ -117,5 +123,78 @@ p {
 	width: 20rem;
 }
 
+@media only screen and (max-width: 1200px) {
+	.subtitle {
+		margin-bottom: 26rem;
+	}
 
+}
+
+@media only screen and (max-width: 1050px) {
+	.subtitle {
+		margin-bottom: 28rem;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+	.maintitle {
+		margin-top: 32%;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.maintitle {
+		margin-top: 38%;
+	}
+
+	.centerrow iframe {
+		margin: -.5rem 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	.centerrow iframe {
+		margin: -2rem 0;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+
+	.centerrow iframe {
+		margin: -3rem 0;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.maintitle {
+		margin-top: 45%;
+	}
+
+	.centerrow iframe {
+		margin: -4rem 0;
+	}
+}
+
+
+@media only screen and (max-width: 520px) {
+	.maintitle {
+		margin-top: 52%;
+	}
+	.centerrow iframe {
+		margin: -5rem 0;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.maintitle {
+		margin-top: 60%;
+	}
+
+	.centerrow iframe {
+		margin: -7rem 0;
+	}
+}
 
