@@ -15,6 +15,23 @@ h2 {
 
 .banner {
 	background: #FFE7F5;
+	height: 7.8rem;
+	padding: 4rem 0 0 ;
+}
+
+.banner div {
+	width: 16rem;
+	margin: 0 auto;
+	background: #38383A;
+	padding: .5rem 0;
+}
+
+.banner h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	letter-spacing: 0;
 }
 
 .banner img {
@@ -140,16 +157,29 @@ footer {
 
 }
 
+@media only screen and (max-height: 800px) {
+	.hero {
+		margin: 2rem auto 2.5rem;
+	}
+}
+
+@media only screen and (max-height: 700px) {
+	.banner {
+	height: 5.8rem;
+	padding: 2rem 0 0 ;
+}
+}
+
 @media only screen and (min-height: 700px) {
 	.hero {
-		margin: 8rem auto 2.5rem;
+		margin: 4rem auto 2.5rem;
 	}
 }
 
-
+/*
 @media only screen and (min-height: 800px) {
 	.hero {
-		margin: 10rem auto 2.5rem;
+		margin: 6rem auto 2.5rem;
 	}
-}
+}*/
 
