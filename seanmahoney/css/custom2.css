@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400');
+
+body {
+	text-rendering: optimizeLegibility;
+}
+
 nav ul {
 	margin: 0 auto;
 	text-align: center;
@@ -35,6 +41,9 @@ h6 {
 
 p {
 	text-align: justify;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	letter-spacing: .05rem;
 }
 
 
@@ -97,7 +106,6 @@ p {
 	max-width: 640px;
 	margin: 0 auto 5rem;
 	text-align: justify;
-	border-bottom: 1px solid #bbb;
 }
 
 .centerrow iframe {
@@ -126,6 +134,10 @@ p {
 	padding: 2rem 10rem;
 	background-color: #eee;
 	text-decoration: none;
+}
+
+.bio {
+	margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1200px) {

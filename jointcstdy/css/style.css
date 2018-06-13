@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Nova+Round');
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto';
@@ -13,23 +15,24 @@ h2 {
 	margin: 2rem;
 }
 
-.banner {
+/*.banner {
 	background: #FFE7F5;
 	height: 7.8rem;
 	padding: 4rem 0 0 ;
-}
+}*/
 
-.banner div {
+/*.banner div {
 	width: 16rem;
 	margin: 0 auto;
 	background: #FBDDBA;
 	padding: .5rem 0;
-}
+}*/
 
 .banner h1 {
 	text-transform: uppercase;
-	color: #fff;
-	font-size: 2rem;
+	color: #38383A;
+	font-size: 6rem;
+	font-family: 'Nova Round', cursive;
 	text-align: center;
 	letter-spacing: 0;
 }
@@ -47,6 +50,17 @@ h2 {
 .hero img {
 	width: 100%;
 	height: auto;
+	display: block;
+}
+
+.hero img:hover {
+	opacity: .7;
+}
+
+.imagehover {
+	background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
 
 }
 
@@ -55,7 +69,7 @@ h2 {
 }
 
 .socials span:hover {
-	color: #000;
+	color: #141414;
 	transition: .25s;
 }
 
@@ -65,7 +79,7 @@ h2 {
 
 .socials {
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	margin-bottom: 2rem;
 	color: #38383A;
 }
@@ -139,12 +153,21 @@ footer {
 
 }
 
+@media only screen and (max-width: 800px) {
+	.banner h1 {
+		font-size: 5rem;
+	}
+}
+
 @media only screen and (max-width: 750px) {
 	.hero {
 		width: 80%;
 	}
 	.email input {
 	width: 63%;
+	}
+	.banner h1 {
+		font-size: 4rem;
 	}
 
 }
@@ -159,7 +182,7 @@ footer {
 
 @media only screen and (max-height: 800px) {
 	.hero {
-		margin: 2rem auto 2.5rem;
+		margin: 4rem auto 2.5rem;
 	}
 }
 
