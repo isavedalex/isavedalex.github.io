@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-@import url('https://fonts.googleapis.com/css?family=Nova+Round');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,12 +28,14 @@ h2 {
 }*/
 
 .banner h1 {
-	text-transform: uppercase;
 	color: #38383A;
+	text-transform: lowercase;
 	font-size: 6rem;
-	font-family: 'Nova Round', cursive;
+	font-family: 'Roboto';
+	font-weight: 700;
 	text-align: center;
-	letter-spacing: 0;
+	letter-spacing: .2rem;
+	word-spacing: 2rem;
 }
 
 .banner img {
@@ -143,19 +144,10 @@ footer {
 
 }
 
-@media only screen and (max-width: 750px) {
-	.hero {
-		width: 70%;
-	}
-	.email input {
-	width: 53%;
-	}
-
-}
 
 @media only screen and (max-width: 800px) {
 	.banner h1 {
-		font-size: 5rem;
+		font-size: 5.5rem;
 	}
 }
 
@@ -167,7 +159,7 @@ footer {
 	width: 63%;
 	}
 	.banner h1 {
-		font-size: 4rem;
+		font-size: 5rem;
 	}
 
 }
@@ -176,6 +168,18 @@ footer {
 
 	.email input {
 	width: 80%;
+	}
+
+	.banner h1 {
+		font-size: 4.5rem;
+	}
+
+}
+
+@media only screen and (max-width: 550px) {
+
+		.banner h1 {
+		font-size: 4rem;
 	}
 
 }
