@@ -27,6 +27,17 @@ h2 {
 	padding: .5rem 0;
 }*/
 
+.spotify iframe {
+	position: fixed;
+	left: 10px;
+	top: 10px;
+
+}
+
+.bt-icon {
+	background: #38383A;
+}
+
 .banner h1 {
 	color: #38383A;
 	text-transform: lowercase;
@@ -124,6 +135,10 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 footer {
