@@ -2,6 +2,8 @@
 
 body {
 	text-rendering: optimizeLegibility;
+	padding: 0;
+	margin: 0;
 }
 
 nav ul {
@@ -46,12 +48,15 @@ p {
 	letter-spacing: .05rem;
 }
 
+.index {
+	background: #638D9E;
+}
+
 
 .fixed {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	background: #fff;
 	width: 100%;
 }
 
@@ -78,23 +83,41 @@ p {
 	z-index: 100;
 }
 
+.navbarhome {
+	border-top: none!important;
+	border-bottom: none!important;
+}
+
+.navbarhome .navlink {
+	color: #fff;
+}
+
 .navlink {
 	text-decoration: none;
 	color: #222; 
 }
 
-.maintitle {
-	margin-top: 28%;
+.center-text {
+	margin: 0;
+	padding: 0;
 	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.maintitle {
 	letter-spacing: .1rem;
 	font-weight: 600;
+	font-size: 6rem;
+	color: #fff;
 }
 
 .subtitle {
-	font-size: 18px;
-	text-align: center;
+	font-size: 1.5rem;
 	letter-spacing: .1rem;
-	margin-bottom: 23rem;
+	color: #fff;
 }
 
 .work	{
@@ -140,31 +163,9 @@ p {
 	margin-top: 2rem;
 }
 
-@media only screen and (max-width: 1200px) {
-	.subtitle {
-		margin-bottom: 26rem;
-	}
 
-}
-
-@media only screen and (max-width: 1050px) {
-	.subtitle {
-		margin-bottom: 28rem;
-	}
-
-}
-
-@media only screen and (max-width: 900px) {
-	.maintitle {
-		margin-top: 32%;
-	}
-}
 
 @media only screen and (max-width: 750px) {
-	.maintitle {
-		margin-top: 38%;
-	}
-
 	.centerrow iframe {
 		margin: -.5rem 0;
 	}
@@ -186,9 +187,6 @@ p {
 
 
 @media only screen and (max-width: 600px) {
-	.maintitle {
-		margin-top: 45%;
-	}
 
 	.centerrow iframe {
 		margin: -4rem 0;
@@ -197,33 +195,18 @@ p {
 
 
 @media only screen and (max-width: 520px) {
-	.maintitle {
-		margin-top: 52%;
-	}
+
 	.centerrow iframe {
 		margin: -5rem 0;
 	}
 }
 
 @media only screen and (max-width: 450px) {
-	.maintitle {
-		margin-top: 60%;
-	}
 
 	.centerrow iframe {
 		margin: -7rem 0;
 	}
 }
 
-@media only screen and (min-height: 750px) {
-	.maintitle {
-		margin-top: 50%;
-	}
-}
 
-@media only screen and (min-height: 800px) {
-	.maintitle {
-		margin-top: 85%;
-	}
-}
 
