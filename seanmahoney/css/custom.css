@@ -7,6 +7,10 @@ body {
 	margin: 0;
 }
 
+a {
+	color: #222;
+	text-decoration: none;
+}
 
 nav ul {
 	margin: 0 auto;
@@ -103,6 +107,10 @@ iframe {
 
 .navbarhome .navlink {
 	color: #fff;
+}
+
+.navbarbg {
+	background: #fff;
 }
 
 .navlink {
