@@ -168,14 +168,10 @@ iframe {
 	text-align: center;
 	margin: 2rem auto;
 	padding: 2rem 10rem;
-	background: url(../images/bg.jpg) fixed center no-repeat;
+	background: #eee;
 	text-decoration: none;
-	color: #fff;
 }
 
-a.sociallink:hover {
-	color: #000;
-}
 
 a.sociallink {
 	padding: 2rem;
