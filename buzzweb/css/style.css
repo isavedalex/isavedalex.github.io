@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Fjalla+One|Lobster');
+
+html {
+	font-size: 62.5%;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arimo;
+}
+
+main {
+	background-color: #fff;
+}
+
+p {
+	text-align: justify;
+	text-rendering: optimizeLegibility;
+	letter-spacing: .195rem;
+	line-height: calc(31/28)
+}
+
+img {
+	max-width: 100%;
+	padding: 1.8rem 0;
+}
+
+iframe {
+	max-width: 100%;
+	margin: 2rem 0;
+}
+
+h2 {
+	font-family: 'fjalla one';
+	font-size: 40px;
+	font-size: 4rem;
+	text-align: center;
+	margin: 8rem 0 2rem;
+}
+
+h3 {
+	font-family: 'fjalla one';
+	font-size: 20px;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+aside {
+	float: right;
+}
+
+li {
+	list-style: 
+}
+
+input {
+	width: 100%;
+	margin: .2rem auto 1.2rem;
+	height: 3rem;
+}
+
+textarea {
+	width: 100%;
+	height: 17rem;
+	resize: none;
+}
+
+ul {
+	max-width: 30rem;
+	margin: 0 auto;
+}
+
+li {
+	padding: .1rem 0;
+}
+
+form button {
+	color: #fff;
+	background-color: #000;
+	font-size: 1.6rem;
+	letter-spacing: .195rem;
+	line-height: calc(31/28);
+	padding: 1rem 8.5rem;
+	border: none;
+	margin-top: 1rem;
+}
+
+
+.clear {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.parallax { 
+  background-image: url("../img/bg.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1 {
+	font-family: Lobster;
+	font-size: 100px;
+	font-size: 10rem;
+	letter-spacing: .45rem;
+	color: #F59B23;
+	text-shadow: -1px 0 #F0D8B7, 0 1px #F0D8B7, 1px 0 #F0D8B7, 0 -1px #F0D8B7;
+	text-align: center;
+	padding-top: 4.5rem;
+}
+
+.parallax h4 {
+	color: #fff;
+	font-size: 24px;
+	font-size: 2.4rem;
+	text-align: center;
+	letter-spacing: .3rem;
+	padding-top: 2.7rem;
+	font-weight: 200;
+}
+
+.parallax a {
+	font-family: 'Fjalla One';
+	font-size: 33px;
+	font-size: 3.3rem;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background-color: #EB1E32;
+	padding: 1.4rem 3.7rem;
+	border-radius: 38px;
+	border: 1px #979797 solid;
+	position: absolute;
+	bottom: 44px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.wrapper {
+	font-size: 18px;
+	font-size: 1.8rem;
+	max-width: 768px;
+	margin: 0 auto 10rem;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	margin: 0 20rem;
+}
+
+
+.flexbox div {
+	width: 30rem;
+	padding: 1.8rem 1rem;
+	font-size: 14px;
+	font-size: 1.4rem;
+	letter-spacing: .1rem;
+	margin: 0 .2rem;
+	border-top: #898989 solid 1px;
+
+}
+
+.flexbox span {
+	font-weight: 700;
+}
+
+
+
+.clientlogos {
+	max-width: 1800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clientlogos img {
+	padding: 0 2rem;
+	width: 10rem;
+	height: auto;
+	filter: grayscale(100%);
+}
+
+#contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1700px) {
+  .flexbox {
+    margin: 0 10rem;
+  }
+  .flexbox div {
+  	padding: .8rem .8rem;
+  }
+}
+
+@media only screen and (max-width: 1475px) {
+  .flexbox {
+    margin: 0 8rem;
+  }
+  .flexbox div {
+  	padding: .8rem .8rem;
+  }
+}
+
+@media only screen and (max-width: 1444px) {
+  .flexbox {
+    margin: 0 5rem;
+  }
+  .flexbox div {
+  	padding: .9rem .8rem;
+  }
+
+  #contact-form {
+  	width: 65%
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+	.parallax h1 {
+		font-size: 80px;
+		font-size: 8rem;
+	}
+	.parallax h4 {
+		font-size: 19px;
+		font-size: 1.9rem;
+	}
+	.parallax a {
+		font-size: 26px;
+		font-size: 2.6rem;
+		padding: 1.1rem 2.9rem;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	.parallax h1 {
+		font-size: 70px;
+		font-size: 7rem;
+	}
+	.parallax h4 {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+	.parallax a {
+		font-size: 22px;
+		font-size: 2.2rem;
+		padding: 0.9rem 2.5rem;
+	}
+	.wrapper {
+	font-size: 16px;
+	font-size: 1.6rem;
+	max-width: 85%;
+  }
+	h2 {
+		font-size: 35px;
+		font-size: 3.5rem;
+	}
+
+	#contact-form {
+		width: 75%;
+	}
+
+	iframe {
+		height: 40rem;
+	}
+
+}
+
+@media only screen and (max-width: 740px) {
+  .flexbox {
+    margin: 0 2rem;
+  }
+  .flexbox div {
+  	padding: .9rem .8rem;
+  }
+  	iframe {
+		height: 35rem;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.parallax h1 {
+		font-size: 60px;
+		font-size: 6rem;
+	}
+	.parallax h4 {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+	.wrapper {
+	font-size: 14px;
+	font-size: 1.4rem;
+	max-width: 85%;
+  }
+    	iframe {
+		height: 30rem;
+	}
+}
+
